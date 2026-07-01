@@ -33,7 +33,7 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-Add your answer here...
+I believe consistency beats intensity in career growth, and most people around me would disagree because they still trust motivation, paying huge amount for IT training, having all access to many resources. So, steady execution over time by keep showing up, documenting, practicing, and building portfolio from small usually win. 
 
 ---
 
@@ -55,11 +55,11 @@ Write each truth in this format:
 
 ### Truth
 
-Add your answer here...
+Repetition and consistency build skill more effectively than occasional bursts of motivation.
 
 ### Evidence from my life
 
-Add your answer here...
+Since I started with DevOps two years ago and participated in regular WhatsApp self-training sessions with like-minded DevOps enthusiasts, I have retained more information and understood the concepts little individually and not real-world experience. Whenever I tried to rush through much at once, I became overwhelmed and forgot details quickly. Consistent practice has always given me better results than random intensity.
 
 ---
 
@@ -67,11 +67,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Learning DevOps tools in isolation does not create real-world experience
 
 ### Evidence from my life
 
-Add your answer here...
+I have practise individual tools, but that only gave me theory and familiarity. It did not fully teach me how the tools work together in a real world workflow. This micro internship, even with the small introduction, mentor coordination, and support for trainees, has already assure me for positivive experience.
 
 ---
 
@@ -79,11 +79,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Proof of work can really creates both visibility and credibility.
 
 ### Evidence from my life
 
-Add your answer here...
+Whenever I produce something tangible, such as notes, assignments, and build portfolio, I understand the topic more deeply. I also feel more confident because I can point to real evidence of effort instead of just saying I studied.
 
 ---
 
@@ -135,13 +135,28 @@ Include this line:
 
 ## Your Article
 
-Add your answer here...
+By 2027, Solomon Anichebe would had grown into a strong DevOps, Cloud and Agentic AI Engineer. A professional with a strong reputation for discipline, practical delivery, and clear thinking after completing structured DevOps Micro Internship with Agentic AI that showed real world capability. He had moved beyond learning tools in isolation and built a solid body of work across Linux administration, Git/GitHub workflows, containerization, kubernetes, orchestration, CI/CD, and cloud infrastructure learning across AWS and Azure with growing focus on Agentic AI, automation, and AI-assisted engineering workflows.
+
+He had documented these projects in his portfolio and GitHub repository, making his progress visible and easy to verify. Rather than waiting for perfect conditions, he learned to build, test, improve, and publish as he went.
+
+He had also strengthened his professional profile through blogs, technical writeups, and portfolio-driven visibility. His blog posts and project notes showed that he could explain ideas clearly, not just execute them. He earned relevant certifications and continued building proof that his skills were real and current. This made his profile stronger for employers because it reflected both technical ability and the discipline to communicate what he was learning and shipping.
+
+He also built a forward-looking identity around automation. In addition to core DevOps skills, he explored Agentic AI as a practical extension of modern engineering work. He studied how AI could support task planning, documentation, troubleshooting, and workflow automation, and he began combining that interest with his DevOps mindset. This made his work more relevant to the future of cloud and platform engineering.
+
+By this stage, he had become the kind of professional who could be trusted to build, lead, document, and contribute with consistency. His GitHub, portfolio, certifications, blogs, and community collaboration all pointed to the same truth he had turned discipline into visible results. He was no longer defined by what he was learning; he was defined by what he had built, shipped, documented, and contributed.
+
+This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). 
+
+You can start your DevOps journey by joining this [Discord community](https://discord.pravinmishra.com/) ( https://discord.pravinmishra.com/ )
+
+Solomon Anichebe
+DevOps Engineer | Cloud Engineer | Agentic AI Enthusiast
 
 ### Public Link
 
 Paste your link here:
 
-`__________________________`
+`https://www.linkedin.com/in/solomonanichebe`
 
 ---
 
@@ -165,7 +180,7 @@ This is about self-awareness, not judgment.
 
 ### Answer Format
 
-**Yes / No**
+**Yes**
 
 If Yes:
 
@@ -173,7 +188,7 @@ If Yes:
 
 ## Answer
 
-Add your answer here...
+I have cut corners before, and the main emotion I felt was numbness. I knew it did not reflect my standard and what I wanted for myself. That created guilt and quiet regret because part of me understood that I had chosen speed over integrity and consistency. The feeling stayed with me longer than the benefit of the shortcut, and it reminded me that dishonesty often brings more internal stress than real progress.
 
 ---
 
@@ -199,16 +214,45 @@ Choose books that improve:
 
 ## Book List
 
-1. Add your answer here...
-2. Add your answer here...
-3. Add your answer here...
-4. Add your answer here...
-5. Add your answer here...
-6. Add your answer here...
-7. Add your answer here...
-8. Add your answer here...
-9. Add your answer here...
-10. Add your answer here...
+1. Atomic Habits — James Clear
+
+![Assignment 5 screenshot](screenshots/atomic-habit.png)
+
+2. Mindset — Carol S. Dweck
+
+![Assignment 5 screenshot](screenshots/mindset.jfif)
+
+3. Think and Grow Rich — Napoleon Hill
+
+![Assignment 5 screenshot](screenshots/think-grow-rich.jfif)
+
+4. Getting Things Done — David Allen
+
+![Assignment 5 screenshot](screenshots/getting-things-done.png)
+
+5. Why We Sleep — Matthew Walker
+
+![Assignment 5 screenshot](screenshots/why-we-sleep.png)
+
+6. So Good They Can’t Ignore You — Cal Newport
+
+![Assignment 5 screenshot](screenshots/so-good-cannot-ignore-you.jfif)
+
+7. The Power of Habit — Charles Duhigg
+
+![Assignment 5 screenshot](screenshots/power-of-habit.jfif)
+
+8. The Happiness Advantage — Shawn Achor
+
+![Assignment 5 screenshot](screenshots/happyness-advantage.jfif)
+
+9. Leaders Eat Last — Simon Sinek
+
+![Assignment 5 screenshot](screenshots/leaders-eat-last.png)
+
+10. Deep Work — Cal Newport
+
+![Assignment 5 screenshot](screenshots/deep-work.png)
 
 ---
 
@@ -237,16 +281,16 @@ List topics only. No need to share numbers.
 
 ## My Metrics
 
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
+* Learning hours per week.
+* Deep work sessions per week.
+* Projects shipped.
+* Documentation published.
+* GitHub commits.
+* Sleep hours.
+* Workout.
+* Energy level.
+* Focus time.
+* Personal spending.
 
 ---
 
@@ -268,11 +312,11 @@ Examples:
 
 ### Did You Do It?
 
-**Yes / No**
+**Yes**
 
 Answer:
 
-Add your answer here...
+I need to reply to whatsapp message. I still have a bill to pay
 
 ---
 
@@ -290,7 +334,9 @@ Example:
 
 #### My Weekly Routine
 
-Add your answer here...
+Monday to Thursday: 3 hours each day for study/practical. 
+Saturday: 8hrs session without distraction. 
+Sunday: 2hrs to review and plan.
 
 ---
 
@@ -298,11 +344,17 @@ Add your answer here...
 
 #### When Will You Do DMI Work? (Days + Time)
 
-Add your answer here...
+9am -12pm WAT (Monday to Thursday)
+5.30am - 1:30pm (Saturday)
+No specific time, but when i am back from church service, i have good 2hrs for review/planning
 
 #### How Many Sessions Per Week?
 
-Add your answer here...
+12hrs Mon-Thur 
+8hrs Sat
+2hrs Sun
+
+Total of 22hrs Per Week
 
 ---
 
@@ -316,7 +368,7 @@ Examples:
 
 #### My Distraction Rules
 
-Add your answer here...
+Staying away from youtube videos and current political news. Staying away from social media in general
 
 ---
 
@@ -324,27 +376,27 @@ Add your answer here...
 
 ### Biggest insight I got about myself this week
 
-Add your answer here...
+i learnt i can achieve this even with the current electrical light issue. I know already the internship is successful through the support session i join to know how things will be.
 
 ### My biggest weakness/loop I noticed
 
-Add your answer here...
+Alway wanting to watch youtube like its my relaxing tool. I also notice i could have finished up on Monday but i delay it, showing lack of discipline
 
 ### One system I will implement from this week (exact habit + time)
 
-Add your answer here...
+I will spend 3hour every day morning 9AM to 12PM on DMI tasks, and 8hrs every Saturday without my phone or social media.
 
 ### LinkedIn Post
 
 Paste your LinkedIn post link here:
 
-`__________________________`
+`https://www.linkedin.com/in/solomonanichebe`
 
 ---
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **ADD LINK HERE**  
+- LinkedIn Post URL: **(https://www.linkedin.com/in/solomonanichebe)**  
 - Blog / Medium : **ADD LINK HERE**  
 
 ---
