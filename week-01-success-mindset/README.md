@@ -135,28 +135,25 @@ Include this line:
 
 ## Your Article
 
-By 2027, Solomon Anichebe would had grown into a strong DevOps, Cloud and Agentic AI Engineer. A professional with a strong reputation for discipline, practical delivery, and clear thinking after completing structured DevOps Micro Internship with Agentic AI that showed real world capability. He had moved beyond learning tools in isolation and built a solid body of work across Linux administration, Git/GitHub workflows, containerization, kubernetes, orchestration, CI/CD, and cloud infrastructure learning across AWS and Azure with growing focus on Agentic AI, automation, and AI-assisted engineering workflows.
+My Version 2.0 Five years from now, would had grown into a strong DevOps and Agentic AI Engineer. A professional with a strong reputation for positive habits, discipline, consistency, practical delivery, and clear thinking after completing structured DevOps Micro Internship with Agentic AI that showed real world capability. He had moved beyond learning tools in isolation and built a solid body of work across Linux administration, Git/GitHub workflows, containerization, kubernetes, orchestration, CI/CD, and cloud infrastructure learning across AWS and Azure with growing focus on Agentic AI, automation, and AI-assisted engineering workflows.
 
-He had documented these projects in his portfolio and GitHub repository, making his progress visible and easy to verify. Rather than waiting for perfect conditions, he learned to build, test, improve, and publish as he went.
+As an engineer, I have worked and built real world Industry-recognized cloud infrastructure that powers real businesses. My portfolio reflects years of solving real-world problems through from backend engineering, infrastructure automation, Agentic AI to automation, and AI-assisted DevOps workflows. All these projects were documented in my portfolio and GitHub repository, making the progress visible and easy to verify. Rather than waiting for perfect conditions, i learned to build, test, improve, and publish as i went.
 
-He had also strengthened his professional profile through blogs, technical writeups, and portfolio-driven visibility. His blog posts and project notes showed that he could explain ideas clearly, not just execute them. He earned relevant certifications and continued building proof that his skills were real and current. This made his profile stronger for employers because it reflected both technical ability and the discipline to communicate what he was learning and shipping.
+Also strengthened his professional profile through blogs, technical writeups, and portfolio-driven visibility. The blog posts and project notes showed that i could explain ideas clearly, not just execute them. Also includes relevant industry recognized cloud certifications that complement his experience, and continued building proof that his skills were real and industry accepted. This made his profile stronger for employers because it reflected both technical ability and the discipline to communicate what he is learning and building.
 
-He also built a forward-looking identity around automation. In addition to core DevOps skills, he explored Agentic AI as a practical extension of modern engineering work. He studied how AI could support task planning, documentation, troubleshooting, and workflow automation, and he began combining that interest with his DevOps mindset. This made his work more relevant to the future of cloud and platform engineering.
+Also built a forward-looking identity around automation. In addition to core DevOps skills, he explored Agentic AI as a practical extension of modern engineering work. Studied how AI could support task planning, documentation, troubleshooting, and workflow automation, and he began combining that interest with his DevOps mindset. This made his work more relevant to the future of cloud and platform engineering.
 
-By this stage, he had become the kind of professional who could be trusted to build, lead, document, and contribute with consistency. His GitHub, portfolio, certifications, blogs, and community collaboration all pointed to the same truth he had turned discipline into visible results. He was no longer defined by what he was learning; he was defined by what he had built, shipped, documented, and contributed.
+At this stage, he had become the kind of professional who could be trusted to build, lead, document, and contribute with consistency to cloud technology. The GitHub, portfolio, certifications, blogs, and community collaboration all pointed to the same truth he had turned discipline into visible results. He was no longer defined by what he was learning; he was defined by what he had built, shipped, documented, and contributed.
+
 
 This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). 
 
 You can start your DevOps journey by joining this [Discord community](https://discord.pravinmishra.com/) ( https://discord.pravinmishra.com/ )
 
-Solomon Anichebe
-DevOps Engineer | Cloud Engineer | Agentic AI Enthusiast
 
 ### Public Link
 
-Paste your link here:
-
-`https://www.linkedin.com/in/solomonanichebe`
+` https://www.linkedin.com/posts/solomonanichebe_join-the-dmi-devops-micro-internship-share-7478723066529980416-PELs/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY `
 
 ---
 
@@ -220,11 +217,11 @@ Choose books that improve:
 
 2. Mindset — Carol S. Dweck
 
-![Assignment 5 screenshot](screenshots/mindset.jfif)
+![Assignment 5 screenshot](screenshots/mindset.png)
 
 3. Think and Grow Rich — Napoleon Hill
 
-![Assignment 5 screenshot](screenshots/think-grow-rich.jfif)
+![Assignment 5 screenshot](screenshots/think-grow-rich.png)
 
 4. Getting Things Done — David Allen
 
@@ -236,15 +233,15 @@ Choose books that improve:
 
 6. So Good They Can’t Ignore You — Cal Newport
 
-![Assignment 5 screenshot](screenshots/so-good-cannot-ignore-you.jfif)
+![Assignment 5 screenshot](screenshots/so-good-cannot-ignore-you.png)
 
 7. The Power of Habit — Charles Duhigg
 
-![Assignment 5 screenshot](screenshots/power-of-habit.jfif)
+![Assignment 5 screenshot](screenshots/power-of-habit.png)
 
 8. The Happiness Advantage — Shawn Achor
 
-![Assignment 5 screenshot](screenshots/happyness-advantage.jfif)
+![Assignment 5 screenshot](screenshots/happyness-advantage.jpg)
 
 9. Leaders Eat Last — Simon Sinek
 
@@ -253,6 +250,7 @@ Choose books that improve:
 10. Deep Work — Cal Newport
 
 ![Assignment 5 screenshot](screenshots/deep-work.png)
+
 
 ---
 
@@ -334,7 +332,8 @@ Example:
 
 #### My Weekly Routine
 
-Monday to Thursday: 3 hours each day for study/practical. 
+Commit 30mins exercise everyday
+Monday to Thursday: 3 hours each day for assignment and study/practical. 
 Saturday: 8hrs session without distraction. 
 Sunday: 2hrs to review and plan.
 
@@ -368,7 +367,7 @@ Examples:
 
 #### My Distraction Rules
 
-Staying away from youtube videos and current political news. Staying away from social media in general
+Staying away from social media and youtube videos and focus on DMI program.
 
 ---
 
@@ -376,28 +375,29 @@ Staying away from youtube videos and current political news. Staying away from s
 
 ### Biggest insight I got about myself this week
 
-i learnt i can achieve this even with the current electrical light issue. I know already the internship is successful through the support session i join to know how things will be.
+My biggest insight is i can achieve DMI prgram with mindset focused positive thought, consistency, and discipline. My veersion 2.0 will now reflects the kind of person I want to be which centered on postive mindset toward DMI cohort 3, intentionality regarding positive habits, and discipline. Also I know already the Micro internship is successful through the support session given by co-mentors to know how things will be.
 
 ### My biggest weakness/loop I noticed
 
-Alway wanting to watch youtube like its my relaxing tool. I also notice i could have finished up on Monday but i delay it, showing lack of discipline
+Alway wanting to watch youtube like its my relaxing tool. Engaging so much on social media even when i have engagement and my mind we will be telling me to do my study later, which is procastination. I also notice i could have finished up on Tuesday but i delay it to thursday, showing lack of discipline and focus.
 
 ### One system I will implement from this week (exact habit + time)
 
-I will spend 3hour every day morning 9AM to 12PM on DMI tasks, and 8hrs every Saturday without my phone or social media.
+I will spend 3hour every day morning 9AM to 12PM on DMI tasks withour phone, social media, or any distraction. MY 8hrs every Saturday without my phone or social media in other to build and protect my future development.
 
 ### LinkedIn Post
 
 Paste your LinkedIn post link here:
 
-`https://www.linkedin.com/in/solomonanichebe`
+`https://www.linkedin.com/posts/solomonanichebe_join-the-dmi-devops-micro-internship-share-7478723066529980416-PELs/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY`
 
 ---
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **(https://www.linkedin.com/in/solomonanichebe)**  
-- Blog / Medium : **ADD LINK HERE**  
+- LinkedIn Post URL: **https://www.linkedin.com/posts/solomonanichebe_join-the-dmi-devops-micro-internship-share-7478723066529980416-PELs/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY**
+
+- Blog / Medium : **https://medium.com/@jobcreation2009/what-my-version-2-0-looks-like-0915a6db7e12?sharedUserId=jobcreation2009**  
 
 ---
 
