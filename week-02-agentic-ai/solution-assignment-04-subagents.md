@@ -54,13 +54,13 @@ The Terraform writer needs flexibility because it performs code generation and m
 
 #### Screenshot 2 — `security-auditor.md` frontmatter showing model and tools configuration
 
-![Assignment 3 screenshot](screenshots/security-auditor.png)
+![Assignment 4 screenshot](screenshots/security-auditor.png)
 
 ---
 
 #### Screenshot 3 — `cost-optimizer.md` frontmatter showing the model and tools configuration
 
-![Assignment 3 screenshot](screenshots/cost-optimizer.png)
+![Assignment 4 screenshot](screenshots/cost-optimizer.png)
 
 ---
 
@@ -74,13 +74,13 @@ Trigger the security auditor agent and analyze the generated security report for
 
 #### Screenshot 4 — The delegation message showing Claude launched the security-auditor
 
-![Assignment 3 screenshot](screenshots/security-auditor-delegation.png)
+![Assignment 4 screenshot](screenshots/security-auditor-delegation.png)
 
 ---
 
 #### Screenshot 5 — Security audit report output
 
-![Assignment 3 screenshot](screenshots/security-auditor-agent-report.png)
+![Assignment 4 screenshot](screenshots/security-auditor-agent-report.png)
 
 ---
 
@@ -94,8 +94,8 @@ Trigger the cost optimizer agent and review the generated cost optimization repo
 
 #### Screenshot 6 — The full cost optimization report
 
-![Assignment 3 screenshot](screenshots/cost-optimization-agent-report.png)
-![Assignment 3 screenshot](screenshots/cost-optimization-agent-report1.png)
+![Assignment 4 screenshot](screenshots/cost-optimization-agent-report.png)
+![Assignment 4 screenshot](screenshots/cost-optimization-agent-report1.png)
 
 ---
 
@@ -111,7 +111,7 @@ Trigger the cost optimizer agent and review the generated cost optimization repo
 
 Paste your forked repository URL here:
 
-`__________________________`
+`https://github.com/nomolos98/devops-micro-internship-pravinmishra.git`
 
 ---
 
