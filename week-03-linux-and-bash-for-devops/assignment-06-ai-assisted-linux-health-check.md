@@ -20,13 +20,13 @@ Confirm that Nginx and the React application are healthy before building the aut
 
 #### Screenshot 1 — Output of `systemctl is-active nginx`, `ss -ltn | grep ':80'`, and `curl -I http://localhost`
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-active-nginx-grep-curl-output.png)
 
 ---
 
 #### Screenshot 2 — Output of `pwd` and `find . -maxdepth 4 -type d | sort` showing the workspace folder structure
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-pwd-find.maxdepth-folderstructure.png)
 
 ---
 
@@ -36,19 +36,19 @@ Answer the following in your own words:
 
 **1. What proves that Nginx is running?**
 
-Add your answer here.
+If systemctl is-active nginx returns active, that means the Nginx service is currently running. This is a strong sign that the web server process has started properly and is working on the machine.
 
 ---
 
 **2. What proves that the server is listening for HTTP traffic?**
 
-Add your answer here.
+If ss -ltn | grep ':80' shows port 80, it means the server is listening on the standard HTTP port and can receive HTTP requests. In simple terms, the machine is ready to accept web traffic from browsers or other clients.
 
 ---
 
 **3. Why must you capture a healthy baseline before simulating an incident?**
 
-Add your answer here.
+A healthy baseline gives you a normal starting point before anything goes wrong. It helps you compare the working system with the broken one so you can clearly see what changed. After fixing the problem, you can check the system again and confirm that it has returned to the normal healthy state.
 
 ---
 
@@ -72,19 +72,19 @@ Answer the following in your own words:
 
 **1. Why should Claude receive project-specific operational rules?**
 
-Add your answer here.
+Claude needs project-specific rules so it knows the purpose of the project, the exact process to follow, and the actions it should avoid. This keeps the response aligned with the incident workflow and reduces the chance of giving advice that does not fit the situation. In practice, these rules help the assistant stay focused, consistent, and safe when handling operational tasks.
 
 ---
 
 **2. Why is the human required to execute the recovery command?**
 
-Add your answer here.
+The human has to review the situation and decide whether the recovery command is safe before running it. This adds a layer of control, because the assistant can suggest a fix, but a person should approve any change that affects the server. That way, the recovery step is done with judgment and accountability instead of being applied automatically.
 
 ---
 
 **3. Which rule prevents Claude from making an unsupported diagnosis?**
 
-Add your answer here.
+The rule that says not to claim a root cause unless there is supporting evidence stops Claude from guessing. It means the assistant should only explain a cause when the report clearly proves it. This is important because incident analysis should be based on facts, not assumptions.
 
 ---
 
@@ -98,7 +98,8 @@ Use Claude Code to inspect the environment and produce a read-only plan before c
 
 #### Screenshot 4 — Claude Code showing the five-check plan and read-only inspection results
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-five-check-plan.png)
+![Assignment 6 screenshot](screenshots/ass06-five-check-plan1.png)
 
 ---
 
@@ -108,19 +109,19 @@ Answer the following in your own words:
 
 **1. Which part of this task represents the Gather phase?**
 
-Add your answer here.
+The Gather phase is the part where information is collected from the Ubuntu server without making any changes. In this task, that means checking things like whether Nginx is running, whether port 80 is open, what the HTTP response looks like, and whether disk space and memory are healthy. The purpose is to understand the current state of the system before taking any action.
 
 ---
 
 **2. Did Claude follow the instruction not to create files? How did you verify this?**
 
-Add your answer here.
+Yes, Claude followed the instruction because it only inspected the system and did not create any new files. I verified that by checking the workspace contents and confirming that no new Bash script or extra file appeared. That shows the task stayed in read-only mode and did not make changes to the environment.
 
 ---
 
 **3. Why is planning before coding useful in DevOps automation?**
 
-Add your answer here.
+Planning first helps you think through what the script should do, what it should check, and how each result should be interpreted. It also helps you catch missing steps, risky actions, or logic problems before writing the script. In DevOps, this saves time, reduces mistakes, and makes automation safer and easier to maintain.
 
 ---
 
@@ -134,25 +135,25 @@ Create one Bash script that gathers consistent Linux and Nginx health evidence.
 
 #### Screenshot 5 — Top section of `linux-triage.sh` showing variables, thresholds, and the checks array
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-topsection-linux-triage-sh.png)
 
 ---
 
 #### Screenshot 6 — Middle section showing check functions and conditionals
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-middlesection-variable-threshold-array.png)
 
 ---
 
 #### Screenshot 7 — Bottom section showing the loop, summary function, and exit behavior
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-bottomsection-loop-summary.png)
 
 ---
 
 #### Screenshot 8 — Output of `bash -n scripts/linux-triage.sh` (no syntax errors) and `ls -l scripts/linux-triage.sh` showing executable permission
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-output-exec-permision.png)
 
 ---
 
@@ -162,31 +163,35 @@ Answer the following in your own words:
 
 **1. What is stored in the checks array?**
 
-Add your answer here.
+The checks array holds the names of the health-check functions. Each item in the array points to one task, such as checking whether Nginx is running, whether port 80 is open, whether the HTTP response is correct, and whether disk space and memory are okay. Storing them in an array keeps the script organized and makes it easy to manage the checks in one place.
 
 ---
 
 **2. How does the `for` loop use that array?**
 
-Add your answer here.
+The for loop goes through the array one item at a time. For each function name, it runs that check in order. This is a neat way to make sure all the health checks are completed without repeating the same code over and over. It also makes the script easier to expand later if more checks are needed.
 
 ---
 
 **3. Why are the health checks separated into functions?**
 
-Add your answer here.
+Each function focuses on just one job, which keeps the script clear and easy to understand. If one check needs to be changed or fixed, you can update that single function without touching the others. This structure also makes troubleshooting easier because you can test each part separately.
 
 ---
 
 **4. What is the purpose of `$(...)` in this script?**
 
-Add your answer here.
+$(...) is used to run a command and capture its output so it can be stored in a variable or used in another command. In this script, it helps collect information such as the current time, the server name, the HTTP status, disk usage, memory availability, and recent log data. This makes it possible to build a report from live system details.
 
 ---
 
 **5. Why does the script use different exit codes for HEALTHY, WARN, and FAIL?**
 
-Add your answer here.
+Different exit codes give a quick final result for the whole script. 
+0 means everything passed, 
+1 means there is at least one warning, and 
+2 means something failed. 
+This is useful because another person or automation system can tell the server status immediately without reading the full report. It also helps monitoring tools react correctly based on how serious the issue is.
 
 ---
 
@@ -200,13 +205,13 @@ Run the Bash script against the healthy server and verify that it creates a repo
 
 #### Screenshot 9 — Output of `./scripts/linux-triage.sh` showing your Full Name and all five check results
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-scripts-linux-triage-sh-execute.png)
 
 ---
 
 #### Screenshot 10 — Output showing the captured exit code and final summary
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-captured-exit-code-finalsummary.png)
 
 ---
 
@@ -216,25 +221,31 @@ Answer the following in your own words:
 
 **1. What is the overall status of your healthy baseline?**
 
-Add your answer here.
+The overall status is HEALTHY. That means the system passed all checks, so there is no immediate problem in the baseline report. A healthy baseline is important because it gives you a clean reference point before you simulate an incident.
 
 ---
 
 **2. Which exact Linux evidence proves the application is serving traffic?**
 
-Add your answer here.
+Port 80 listening shows that the web server is ready to accept HTTP requests. The HTTP 200 response shows that the application replied successfully, which means traffic is being served normally through the web server.
+So in summary, the evidence show that:
+
+Port 80 is listening and Local HTTP check returned status 200
 
 ---
 
 **3. Did your script return exit code 0 or 1? Explain why.**
 
-Add your answer here.
+The script returned exit code 0 because every health check passed. Nginx was active, the HTTP port was open, the app returned a good HTTP response, and both disk usage and memory were within safe limits. In Bash, exit code 0 usually means success, while nonzero values signal warnings or errors.
 
 ---
 
 **4. What is the difference between a warning and a failure in this script?**
 
-Add your answer here.
+A warning means the system is still working, but something is starting to look risky and should be watched. For example, disk usage between 80 and 90 percent or memory below 100 MB is not an outage yet, but it may become a problem soon. A failure means a key check did not pass, such as Nginx being down, port 80 not listening, the HTTP check failing, or disk usage reaching 90 percent or more.
+
+
+
 
 ---
 
@@ -248,13 +259,13 @@ Turn the Bash script into a reusable, manually invoked Agentic AI workflow.
 
 #### Screenshot 11 — `SKILL.md` showing the frontmatter, allowed tool restrictions, and safety rules
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-linux-triage-skill-workflow.png)
 
 ---
 
 #### Screenshot 12 — `/linux-triage` output for the healthy server
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-linux-triage-healthy-server.png)
 
 ---
 
@@ -264,26 +275,25 @@ Answer the following in your own words:
 
 **1. Why does this skill have Bash, Read, and Grep, but not Write?**
 
-Add your answer here.
+This skill is designed to check the server and review the results, not to change files. Bash is needed to run the triage checks, Read is needed to open the generated report, and Grep is needed to find important results like PASS, WARN, or FAIL. Write is not included because the process should stay read-only and avoid making changes to project files.
 
 ---
 
 **2. Why is `disable-model-invocation: true` useful for this skill?**
 
-Add your answer here.
+This setting makes sure the skill is not started automatically by the assistant. It forces manual use of the triage command, which gives the user more control over when the server check begins. That is helpful in incident work because it keeps the process deliberate and prevents unwanted actions from happening on its own.
 
 ---
 
 **3. What part is performed by Bash, and what part is performed by Claude?**
 
-Add your answer here.
+The Bash script does the inspection work. It checks Nginx, port 80, the HTTP response, disk usage, available memory, and recent logs, then saves the results into a report file. Claude then reads that report, explains what the results mean, points out any warning or failure, and suggests the safest next step. In other words, Bash gathers the facts, and Claude interprets them.
 
 ---
 
 **4. Why is this better than asking Claude "Is my server healthy?" without giving it evidence?**
 
-Add your answer here.
-
+A vague question does not give enough real data to make a good judgment. This approach is better because it first collects live system evidence and then uses that evidence to form the answer. That means the response is based on actual Nginx status, port activity, HTTP response, disk usage, memory, and logs instead of a guess.
 ---
 
 # Task 7 — Simulate an Nginx Incident and Let the Skill Diagnose It
@@ -296,19 +306,19 @@ Create a controlled service failure, gather evidence through Bash, and let Claud
 
 #### Screenshot 13 — Output showing Nginx is inactive and the HTTP request fails
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-nginx-inactive-failed-httprequest.png)
 
 ---
 
 #### Screenshot 14 — `/linux-triage` output showing failed evidence, most likely cause, and a suggested recovery command
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-linux-triage-failed.png)
 
 ---
 
 #### Screenshot 15 — `incident-failure-report.txt` showing the failed checks and your Full Name
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-incident-failure-report-checks.png)
 
 ---
 
@@ -318,31 +328,31 @@ Answer the following in your own words:
 
 **1. Which three checks failed?**
 
-Add your answer here.
+The failed checks were the Nginx service check, the port 80 check, and the local HTTP check. The disk and memory checks were still fine, so the problem was limited to the web service side. In other words, the server resources were okay, but the web application was not reachable.
 
 ---
 
 **2. What evidence supports the conclusion that Nginx is unavailable?**
 
-Add your answer here.
+The report shows three clear signs: Nginx is not active, port 80 is not listening, and the local HTTP request returned 000. When these three results appear together, it usually means the web server is down or not accepting traffic. That also explains why the application cannot respond to browser or client requests.
 
 ---
 
 **3. Did Claude execute the recovery command? Why is that important?**
 
-Add your answer here.
+No, Claude did not run the recovery command; it only suggested it. That is important because a person should review the evidence and approve the fix before anything changes on the server. This keeps the incident response safe and prevents automatic actions from making a bad situation worse.
 
 ---
 
 **4. Which phase of the Agentic Loop is represented by the Bash report?**
 
-Add your answer here.
+The Bash report represents the Gather phase. This is the stage where the script collects facts from the system, such as service status, open ports, HTTP response, disk usage, memory, and recent logs. It creates the raw evidence needed for analysis.
 
 ---
 
 **5. Which phase is represented by Claude's explanation?**
 
-Add your answer here.
+Claude’s explanation represents the Analyze phase. At this stage, the evidence is interpreted, the failed checks are identified, and the likely issue is described. Claude also suggests the next step, but the final recovery action should still be reviewed by a human.
 
 ---
 
@@ -356,25 +366,26 @@ Recover the service as the human operator and prove that the system is healthy a
 
 #### Screenshot 16 — Output showing Nginx is active and `curl -I http://localhost` returns 200 OK
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-nginx-active-curl-ok.png)
 
 ---
 
 #### Screenshot 17 — Second `/linux-triage` output showing successful recovery with no FAIL results
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-second-linux-triage-successful.png)
+![Assignment 6 screenshot](screenshots/ass06-second-linux-triage-successful1.png)
 
 ---
 
 #### Screenshot 18 — Output of `ls -lah reports` showing both `incident-failure-report.txt` and `recovery-report.txt`
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-reports-failure-recovery-report.png)
 
 ---
 
 #### Screenshot 19 — `incident-summary.md` showing all required sections and your Full Name
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-incident-summary-md.png)
 
 ---
 
