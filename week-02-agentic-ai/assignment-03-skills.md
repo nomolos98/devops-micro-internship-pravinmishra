@@ -94,11 +94,13 @@ Paste your forked repository URL here:
 
 `https://github.com/nomolos98/Ultimate-Agentic-DevOps-with-Claude-Code.git`
 
+
 ## LinkedIn post URL
 
 Paste your forked repository URL here:
 
 `https://github.com/nomolos98/Ultimate-Agentic-DevOps-with-Claude-Code.git`
+
 ---
 
 # Completion Checklist

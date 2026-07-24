@@ -391,7 +391,7 @@ Unused cloud resources waste money and can also create security risk if they sta
 
 Paste your LinkedIn post URL here:
 
-`__________________________`
+`Add your URL here`
 
 ---
 

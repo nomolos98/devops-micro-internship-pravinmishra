@@ -460,7 +460,7 @@ This script brings everything together in one place. It uses variables to store 
 
 Paste your LinkedIn post URL here:
 
-`__________________________`
+`Add your URL here`
 
 ---
 

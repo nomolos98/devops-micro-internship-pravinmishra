@@ -46,7 +46,7 @@ You can publish your blog on:
 
 #### Screenshot 1 — Blog published and visible
 
-Add your screenshot here.
+![Assignment 2 screenshot](screenshots/medium-blog-published.png)
 
 ---
 
@@ -54,7 +54,7 @@ Add your screenshot here.
 
 Blog Link:
 
-`__________________________________________`
+`https://medium.com/p/ae40294a053b?postPublishedType=initial`
 
 ---
 
@@ -78,7 +78,7 @@ Your post must include:
 
 ### Required P.S. Line (Must Include Exactly)
 
-> **P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). You can start your DevOps journey by joining [DMI waiting list](https://forms.gle/3hvrWJBDzsDeJoPs6) (https://forms.gle/3hvrWJBDzsDeJoPs6).**
+**P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3**
 
 ---
 
@@ -92,7 +92,7 @@ Your post must include:
 
 #### Screenshot 2 — LinkedIn post published
 
-Add your screenshot here.
+![Assignment 2 screenshot](screenshots/linkedIn-post-published.png)
 
 ---
 
@@ -101,7 +101,19 @@ Add your screenshot here.
 LinkedIn Post Content (copy-paste here):
 
 ```
-Paste your LinkedIn post content here
+Week 2 Reflection: Engineering with Agentic AI
+
+Week2 for the DevOps Micro Internship (DMI) Cohort 3, changed my perspective from using AI to designing systems that let AI reliably act as a teammate. 
+
+Beyond tools and scripts, my mindset changed from “chatting” with AI and started engineering with it, documenting expectations claude. md , packaging repeatable actions into Skills, protecting operations with hooks and permissions, built agentic workflows using claude. md , reusable Skills, and Subagents to automate Terraform scaffolding, planning, and deployment. Connected those agents to live repos via Model Context Protocol so actions use real data. This made the AI feel like a dependable teammate rather than an unpredictable tool.
+
+Each project assignment sharpens my skills as AI engineer and reinforces the need for secure, reliable, and scalable automation. I’m eager to keep learning, refining these practices, and applying them to real-world infrastructure challenges.
+
+Special thanks to Pravin Mishra for sharing this journey of learning and our co-mentors for their guidance, and continuous support throughout this journey Anjana Muthunayake(Lead Co-Mentor), Joy Ukpabi, Tanisha Borana, Nkechi Anna Ahanonye.
+
+P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by Pravin Mishra. You can start your DevOps journey by joining this Discord community ( https://lnkd.in/dEauBgd6 ).
+hashtag#DMIByPravinMishra hashtag#AgenticAI hashtag#ClaudeCode hashtag#DevOps hashtag#LearningInPublic
+
 ```
 
 ---
@@ -109,6 +121,7 @@ Paste your LinkedIn post content here
 ### LinkedIn Post Link:
 
 `https://www.linkedin.com/posts/solomonanichebe_join-the-dmi-devops-micro-internship-share-7482128586729111552-9nck/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY`
+
 
 ---
 
