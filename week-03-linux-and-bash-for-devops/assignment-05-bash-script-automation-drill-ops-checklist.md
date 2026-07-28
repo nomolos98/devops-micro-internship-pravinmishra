@@ -460,13 +460,13 @@ This script brings everything together in one place. It uses variables to store 
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/solomonanichebe_devops-bash-automation-activity-7487391236472033280-P44t?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-linkedIn-post-bash-scripting.png)
 
 ---
 

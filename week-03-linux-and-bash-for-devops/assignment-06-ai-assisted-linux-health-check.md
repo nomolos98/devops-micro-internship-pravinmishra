@@ -395,31 +395,33 @@ Answer the following in your own words:
 
 **1. What action did you execute manually?**
 
-Add your answer here.
+I manually ran the command to start the web server:
+sudo systemctl start nginx. All this failed; the Nginx service check, HTTP accessibility check, and listening Port 80. These failures indicated that the web server was no longer serving requests.
 
 ---
 
 **2. What evidence proves that the service recovered?**
 
-Add your answer here.
+The service is shown as active/running (systemctl status nginx), port 80 is listening (ss/netstat shows a listener on :80), and an HTTP request to localhost returns a successful status (curl http://localhost returns 200). Also,Nginx logs showed a successful startup, confirming that the web server up and serving requests.
 
 ---
 
 **3. Why is the second triage run necessary?**
 
-Add your answer here.
+The second triage run verifies the recovery actually worked and checks for related issues (e.g., the service restarted but the app failed to bind, config errors, or dependent services still broken). It confirms the system reached a healthy state rather than only that a restart command completed. 
+This final verification shows objective evidence that the issue has been resolved and confirm no further action is required. It represents the Verify phase of the Agentic Loop, ensuring the recovery was successful rather than simply assuming it was.
 
 ---
 
 **4. What could go wrong if an AI agent automatically restarted every failed service?**
 
-Add your answer here.
+Automatic restarts of an AI agent can cause cascading failures, it can hide the real problem, cause data loss or corruption, restart at the wrong time (during deployment or backup), and make outages worse by repeatedly restarting a failing service, or break compliance/maintenance rules.
 
 ---
 
 **5. In one sentence, explain the difference between using AI as a chatbot and using AI in this agentic workflow.**
 
-Add your answer here.
+A chatbot gives advice and answers questions; whereas an agentic workflow AI actively checks systems, analyzes problems, and suggests or performs operations as part of an automated cycle.
 
 ---
 
@@ -427,51 +429,86 @@ Add your answer here.
 
 Fill in all seven sections below in your own words.
 
-**Full Name:** Add your full name here
+**Full Name:** Solomon Anichebe
 
-**Date:** DD/MM/YYYY
+**Date:** 20/07/2026
 
 ---
 
 **1. Reported Symptom**
 
-Add your answer here.
+The React app was not loading, and the local web request could not reach port 80. In simple terms, the site looked offline even though the server itself was still reachable for inspection.
 
 ---
 
 **2. Evidence Collected**
 
-Add your answer here.
+The Bash report showed three failed checks:
+
+Nginx service was not active.
+
+Port 80 was not listening.
+
+Local HTTP check returned status 000.
+
+The recent Nginx logs also showed that the service had been stopped and then deactivated successfully. At the same time, the resource checks were fine:
+
+Root disk usage was 65%.
+
+Available memory was 384 MB.
+
+That means the outage was not caused by storage pressure or memory shortage.
 
 ---
 
 **3. Most Likely Cause**
 
-Add your answer here.
+Using only the evidence from the report, the most likely cause was that Nginx had been stopped. Because the service was down, port 80 was closed and the local HTTP request could not connect, which prevented the React app from being served.
 
 ---
 
 **4. Human-Approved Recovery Action**
 
-Add your answer here.
+Claude suggested starting Nginx, but I carried out the fix myself after checking the report. The command I ran manually was: sudo systemctl start nginx
+This matters because service recovery should be approved and executed by a person, not applied automatically.
 
 ---
 
 **5. Verification**
 
-Add your answer here.
+After the restart, I confirmed that Nginx was active with systemctl is-active nginx, and it returned active. I also checked the app with curl -I http://localhost, and it returned HTTP/1.1 200 OK. Then I ran the triage again, and the new report showed:
+
+Nginx service is active.
+
+Port 80 is listening.
+
+Local HTTP check returned status 200.
+
+Root disk usage is 65%.
+
+Available memory is 378 MB.
+
+The final result was HEALTHY, with all five checks passing and no warnings or failures.
 
 ---
 
 **6. Safety Decision**
 
-Add your answer here.
+The AI skill was allowed to gather evidence and explain what it meant because those actions are read-only and safe. It was not allowed to restart Nginx because changing service state affects the live system and should only happen after human review and approval. That separation helps prevent accidental disruption during incident handling.
 
 ---
 
 **7. Agentic Loop Mapping**
 
-Add your answer here.
+This incident followed a clear sequence:
+
+Gather: The Bash script collected evidence about Nginx, port 80, HTTP response, disk usage, memory, and recent logs.
+
+Analyze: Claude reviewed the report, identified the failed checks, and explained that Nginx had been stopped.
+
+Human Act: I reviewed the recommendation and manually ran sudo systemctl start nginx.
+
+Verify: I confirmed Nginx was active, the application returned HTTP 200, and a fresh triage run showed the system was healthy again.
 
 ---
 
@@ -483,13 +520,13 @@ Add your answer here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/solomonanichebe_devops-linux-nginx-activity-7487408043912151040-QEcK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass06-linkedIn-post-aI-assisted.png)
 
 ---
 
@@ -497,7 +534,7 @@ Add your screenshot here.
 
 Paste the URL of your GitHub folder or repository containing the assignment files here:
 
-`Add your URL here`
+`https://github.com/nomolos98/devops-micro-internship-pravinmishra.git`
 
 ---
 

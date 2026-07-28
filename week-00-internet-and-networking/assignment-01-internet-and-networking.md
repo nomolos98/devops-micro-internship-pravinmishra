@@ -25,7 +25,7 @@ Take a screenshot of your interaction showing:
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![Task 1 Screenshot](screenshots/task-1-chatgpt.png)
+![Assignment 1 screenshot](screenshots/ass00-chatgpt-protocol-networking.png)
 
 
 Replace `task-1-chatgpt.png` with your actual screenshot file name.
@@ -34,7 +34,7 @@ Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+Clear, specific prompts lead to clearer explanations, especially when defining concepts like networking protocols. Detailed prompting also helps shape the tone. Simple, real-life examples made the explanation more relatable and easier to understand
 
 ---
 
@@ -59,7 +59,10 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-Add your answer here...
+When someone anywhere in the world types epicreads.com, the request travels through the internet and is broken into tiny data packets, just like splitting a long letter into small envelopes so they travel faster. Each packet may take different routes across global networks before reaching the EpicReads server in Finland.
+The server hosting EpicReads has a unique IP address, which acts like its home address on the internet. The browser then finds the website’s IP address, which works like the server’s home address so the packets know exactly where to go. Using TCP/IP, IP chooses the best route for each packet, while TCP makes sure all packets arrive safely, in order, and are resent if lost.
+When the user’s browser loads the website, its communication uses HTTP or HTTPS, which protects the data like a sealed, encrypted envelope (unlike HTTP, which is open like a postcard).
+All this happens in milliseconds, making EpicReads quick and accessible worldwide.
 
 ---
 
@@ -91,7 +94,7 @@ EpicReads bookstore has two application versions:
 
 Save your diagram image in the `screenshots` folder and update the file name below.
 
-![Application Architecture Diagram](screenshots/task-3-diagram.png)
+![Assignment 1 screenshot](screenshots/ass00-application-architecture-diagram].png)
 
 
 Replace `task-3-diagram.png` with your actual diagram file name.
@@ -102,18 +105,17 @@ Replace `task-3-diagram.png` with your actual diagram file name.
 
 ### Frontend
 
-* Add your answer here...
-* Add your answer here...
+* Node.JS
+* Next.JS
 
 ### Backend
 
-* Add your answer here...
-* Add your answer here...
+* Node.JS
+* Nest.JS
 
 ### Database
 
-* Add your answer here...
-* Add your answer here...
+* PostgresDB
 
 ---
 
@@ -142,7 +144,17 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+- i. The Domain Name System (DNS) Imagine you want to call your friend but you don’t remember their phone number. You open a phone book and look up their name to find the number. DNS works like the internet’s phone book
+When someone types epicreads.com in their browser, the DNS translates this human-friendly name into the server’s IP address (52.172.142.222) so the browser knows where to send the request. 
+
+- ii To connect a domain to an IPv4 address, we use an A record.
+ Example:
+
+| Domain Name   | Record Type | IP Address      |
+|---------------|-------------|-----------------|
+| epicreads.com | A           | 52.172.142.222  |
+
+This tells the browser: “If someone types epicreads.com, go to 52.172.142.222.”
 
 ---
 
@@ -178,7 +190,7 @@ ls
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![VS Code Setup Screenshot](screenshots/task-5-vscode.png)
+![Assignment 1 screenshot](screenshots/ass00-vscode-command.png)
 
 
 Replace `task-5-vscode.png` with your actual screenshot file name.
@@ -218,7 +230,7 @@ Add the following credit note at the end of your post:
 Paste your LinkedIn post URL here:
 
 ```text
-Add your URL here...
+https://www.linkedin.com/posts/solomonanichebe_devops-cloudengineering-learninginpublic-share-7443245885259669504-E370/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY
 ```
 
 ---
@@ -227,7 +239,34 @@ Add your URL here...
 
 Paste the full text of your LinkedIn post here:
 
-Add your post content here...
+Building My DevOps Fundamentals for DevOps Micro Internship (DMI) Cohort 3: The Week tasks just leveled up my fundamentals in networking, architecture, and tools. These basics are game-changers before diving further. Here's what I learned:
+ 
+1️. ChatGPT as your Learning companion
+Using ChatGPT for interactive prompting and setting clear expectations is crucial key. Tailoring the prompt helps to set expectations get spot-on answers appropriately. Also, follow-up questions help clarify concepts further, breaking down touch concepts into simple understandable analogies, this is total game changer for learning.
+ 
+2️. Internet & Networking
+Learn the concept of the internet and networking and how Devices connect globally via IP addresses, TCP/IP (reliable data delivery), packet switching (splitting data for fast travel), HTTP/HTTPS (secure browser-server chats), and ports.
+ 
+3️. Application Architecture
+The App architectures structure how frontend, backend and database interact, which directly impacts deployment and provisioning suitable resources, ensuring scalability, and isolating issues efficiently.
+ 
+Two-tier architecture: Frontend → Database
+This setup links the frontend directly to the database. It places business logic either on the client side or in the database server, which may scale poorly
+Three-tier architecture: Frontend → Backend → Database
+The backend layer sits between the frontend and database to handle logic, queries, and security. This is secure, scalable and the standard for production systems.
+ 
+4️. Domain Name System(DNS) 
+DNS translates human-friendly names (e.g., EpicReads.com) to IP addresses (e.g., 192.0.2.1). This explain how a website like EpicReads.com is accessed globally, DNS grabs the IP, data packets zip across networks, and boom the site loads in seconds.
+ 
+5️. VS Code Setup
+This is an essential tool for DevOps engineers and Set up Visual Studio Code (VS Code) for a DevOps environment and configured it for productivity. 
+ 
+
+P.S. This post is part of the FREE DevOps Micro Internship (DMI) Cohort 3 by Pravin Mishra. You can be part of this learning community too.
+You can JOIN HERE https://lnkd.in/erQUNP99
+DMI Cohort 3: https://lnkd.in/dzF-P-vZ
+
+#DevOps #CloudEngineering #LearningInPublic #TechCommunity #techskills
 
 ---
 
@@ -235,19 +274,19 @@ Add your post content here...
 
 ### What did you find easy?
 
-Add your answer here...
-
+Using ChatGPT for interactive prompting and for setting clear crucial expectations. Tailoring the prompt helps to set expectations to receive answers appropriately. Also, follow-up questions help clarify concepts further, breaking down technical terms into understandable analogies.
+ 
 ---
 
 ### What was difficult?
 
-Add your answer here...
+Drawing the two-tier and three-tier application architecture diagrams at first seem touch at first, at last i was able to labelled each layer, and listed common technologies/tools used in frontend, backend, and database layers. Also setting up the Visual Studio Code (VS Code) for a DevOps environment and configured it for productivity
 
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
+Read, practise deeper, and change mindset in my internship and set extra time for the DMI
 
 ---
 

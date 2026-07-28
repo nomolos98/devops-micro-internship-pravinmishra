@@ -67,8 +67,9 @@ This is not a course. It is an internship-style program — real deployments, re
 
 **My stack**
 
-<!-- Week 00 → Internet & Networking Basics -->
-<!-- [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) -->
+Week 00 → Internet & Networking Basics
+
+[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)
 
 Week 01 → Success Mindset
 
@@ -133,10 +134,10 @@ Week 04 → Git & GitHub
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/solomonanichebe_devops-cloudengineering-learninginpublic-share-7443245885259669504-E370/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | — |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/solomonanichebe_devops-cloudengineering-learninginpublic-share-7443245885259669504-E370/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | https://medium.com/@jobcreation2009/internet-and-networking-first-why-the-foundation-matters-61580d0dd327?postPublishedType=initial |
 | 01 | Success Mindset | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/solomonanichebe_join-the-dmi-devops-micro-internship-share-7478723066529980416-PELs/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | https://medium.com/@jobcreation2009/what-my-version-2-0-looks-like-0915a6db7e12?sharedUserId=jobcreation2009 |
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved  | https://www.linkedin.com/posts/solomonanichebe_join-the-dmi-devops-micro-internship-share-7482128586729111552-9nck/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | https://medium.com/@jobcreation2009/my-week-2-journey-into-agentic-ai-for-devops-ae40294a053b |
-| 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | — | — |
+| 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/solomonanichebe_devops-git-aws-activity-7487251731937058817-KrfS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | https://medium.com/@jobcreation2009/deploying-the-epicreads-static-portfolio-to-an-ubuntu-ec2-with-nginx-a-hands-on-devops-exercise-b71ba48194ff?postPublishedType=initial |
 | 04 | Git & GitHub | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/solomonanichebe_dmibypravinmishra-devops-git-share-7486361979255685121-09xr/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | https://medium.com/@jobcreation2009/how-ai-and-git-safety-checks-strengthen-devops-workflow-cb468847a7b2 |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |

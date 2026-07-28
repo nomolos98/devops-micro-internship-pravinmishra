@@ -391,13 +391,13 @@ Unused cloud resources waste money and can also create security risk if they sta
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/solomonanichebe_devops-git-aws-ugcPost-7487242364198141953-QZZd/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-linkedIn-post.png)
 
 ---
 

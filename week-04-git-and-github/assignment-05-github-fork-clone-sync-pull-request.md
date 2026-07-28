@@ -20,7 +20,7 @@ Fork `pravinmishraaws/devops-micro-internship-interviews` into your own GitHub a
 
 #### Screenshot 1 — Your fork page with your username and `devops-micro-internship-interviews` visible in the browser URL
 
-[Assignment 5 screenshot](screenshots/ass05-forkpage-visible-username.png)
+![Assignment 5 screenshot](screenshots/ass05-forkpage-visible-username.png)
 
 ---
 
@@ -34,8 +34,8 @@ Configure one authentication method — HTTPS with a Personal Access Token, or S
 
 #### Screenshot 2 — Output of `git config --global --get credential.helper` (HTTPS) or `ssh -T git@github.com` (SSH) showing successful authentication — never show your token or private key
 
-[Assignment 5 screenshot](screenshots/ass05-ssh-t-git-successful.png)
-[Assignment 5 screenshot](screenshots/ass05-ssh-t-git-successful1.png)
+![Assignment 5 screenshot](screenshots/ass05-ssh-t-git-successful.png)
+![Assignment 5 screenshot](screenshots/ass05-ssh-t-git-successful1.png)
 
 ---
 
@@ -49,7 +49,7 @@ Clone your fork locally, then add the original repository as `upstream`.
 
 #### Screenshot 3 — Output of `git remote -v` showing `origin` pointing to your fork and `upstream` pointing to `pravinmishraaws/devops-micro-internship-interviews`
 
-[Assignment 5 screenshot](screenshots/ass05-git-remote-origin-upstream.png)
+![Assignment 5 screenshot](screenshots/ass05-git-remote-origin-upstream.png)
 
 ---
 
@@ -63,13 +63,13 @@ Create the branch `feature-readme-update`, add only your own entry (`Full Name �
 
 #### Screenshot 4 — Output of `git status` showing `pull_request.md` modified before staging
 
-[Assignment 5 screenshot](screenshots/ass05-pull-request-status.png)
+![Assignment 5 screenshot](screenshots/ass05-pull-request-status.png)
 
 ---
 
 #### Screenshot 5 — Output of `git commit`
 
-[Assignment 5 screenshot](screenshots/ass05-output-git-commit.png)
+![Assignment 5 screenshot](screenshots/ass05-output-git-commit.png)
 
 ---
 
@@ -83,13 +83,13 @@ Fetch and merge `upstream/main` into your local default branch, rebase your feat
 
 #### Screenshot 6 — Output of `git push -u origin feature-readme-update` showing a successful push
 
-[Assignment 5 screenshot](<screenshots/ass05-upstream sync-push-fork.png>)
+![Assignment 5 screenshot](<screenshots/ass05-upstream sync-push-fork.png>)
 
 ---
 
 #### Screenshot 7 — Your fork on GitHub showing `feature-readme-update` in the branch selector or a "Compare & pull request" banner
 
-[Assignment 5 screenshot](screenshots/ass05-feature-readme-update-branch-selector.png)
+![Assignment 5 screenshot](screenshots/ass05-feature-readme-update-branch-selector.png)
 
 ---
 
@@ -103,13 +103,13 @@ Open a Pull Request from `feature-readme-update` on your fork to `main` on the u
 
 #### Screenshot 8 — Pull Request creation page showing the correct base repository, base branch, head repository, compare branch, and title
 
-[Assignment 5 screenshot](screenshots/ass05-pull-request-creation-page.png)
+![Assignment 5 screenshot](screenshots/ass05-pull-request-creation-page.png)
 
 ---
 
 #### Screenshot 9 — Successfully created Pull Request page with the PR number visible
 
-[Assignment 5 screenshot](screenshots/ass05-pull-request-upstream.png)
+![Assignment 5 screenshot](screenshots/ass05-pull-request-upstream.png)
 
 ---
 
@@ -129,13 +129,13 @@ Paste your Pull Request URL here:
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/solomonanichebe_devops-git-aws-activity-7486839800025616384-mzxu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY`
 
 ---
 
 #### Screenshot — LinkedIn post showing your successfully created Pull Request
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-linkedln-post-pull-request.png)
 
 ---
 
@@ -152,7 +152,7 @@ Add your screenshot here.
 
 Paste your fork URL here:
 
-`Add your URL here`
+`https://github.com/nomolos98/devops-micro-internship-interviews.git`
 
 ---
 
