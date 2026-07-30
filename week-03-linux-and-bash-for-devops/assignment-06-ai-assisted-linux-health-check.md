@@ -181,7 +181,7 @@ Each function focuses on just one job, which keeps the script clear and easy to 
 
 **4. What is the purpose of `$(...)` in this script?**
 
-$(...) is used to run a command and capture its output so it can be stored in a variable or used in another command. In this script, it helps collect information such as the current time, the server name, the HTTP status, disk usage, memory availability, and recent log data. This makes it possible to build a report from live system details.
+This $(...) is used to run a command and capture its output so it can be stored in a variable or used in another command. In this script, it helps collect information such as the current time, the server name, the HTTP status, disk usage, memory availability, and recent log data. This makes it possible to build a report from live system details.
 
 ---
 
@@ -244,9 +244,6 @@ The script returned exit code 0 because every health check passed. Nginx was act
 
 A warning means the system is still working, but something is starting to look risky and should be watched. For example, disk usage between 80 and 90 percent or memory below 100 MB is not an outage yet, but it may become a problem soon. A failure means a key check did not pass, such as Nginx being down, port 80 not listening, the HTTP check failing, or disk usage reaching 90 percent or more.
 
-
-
-
 ---
 
 # Task 6 — Create and Run the /linux-triage Skill
@@ -294,6 +291,7 @@ The Bash script does the inspection work. It checks Nginx, port 80, the HTTP res
 **4. Why is this better than asking Claude "Is my server healthy?" without giving it evidence?**
 
 A vague question does not give enough real data to make a good judgment. This approach is better because it first collects live system evidence and then uses that evidence to form the answer. That means the response is based on actual Nginx status, port activity, HTTP response, disk usage, memory, and logs instead of a guess.
+
 ---
 
 # Task 7 — Simulate an Nginx Incident and Let the Skill Diagnose It
