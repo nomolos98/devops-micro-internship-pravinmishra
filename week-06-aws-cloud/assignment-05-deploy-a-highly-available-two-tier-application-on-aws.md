@@ -20,31 +20,31 @@ Build a VPC (10.0.0.0/16) with two public and two private subnets across two Ava
 
 #### Screenshot 1 — VPC details showing CIDR 10.0.0.0/16
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-vpc-details-cidr.png)
 
 ---
 
 #### Screenshot 2 — Subnets list showing four subnets and their Availability Zones
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-subnets-aailability-zones.png)
 
 ---
 
 #### Screenshot 3 — Public route table showing the Internet Gateway route and both public-subnet associations
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-routetable-igw-publicsubnet.png)
 
 ---
 
-#### Screenshot 4 — Private route table showing the NAT Gateway route and both private-subnet associations
+#### Screenshot 5 — Private route table showing the NAT Gateway route and both private-subnet associations
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-routetable-natgw-privatesubnet.png)
 
 ---
 
 #### Screenshot 5 — NAT Gateway status showing Available and the Elastic IP
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-nat-gateway-elastic-ip.png)
 
 ---
 
@@ -58,19 +58,19 @@ Create `ha-alb-sg` (HTTP public), `ha-web-sg` (HTTP only from `ha-alb-sg`, SSH f
 
 #### Screenshot 6 — ALB Security Group inbound rules
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-alb-securitygroup-inboundrules.png)
 
 ---
 
 #### Screenshot 7 — EC2 Security Group inbound rules showing the ALB Security Group reference and SSH from your IP
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-ec2-security-group-inbound-rules.png)
 
 ---
 
 #### Screenshot 8 — RDS Security Group inbound rule showing the database port allowed only from the EC2 Security Group
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-rds-security-group-inbound-rule.png)
 
 ---
 
@@ -84,13 +84,14 @@ Launch a private, Multi-AZ RDS database (MySQL or PostgreSQL) using the private 
 
 #### Screenshot 9 — RDS summary showing Multi-AZ = Yes and Publicly accessible = No
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-rds-multi-az-publicly-accessible-no.png)
 
 ---
 
 #### Screenshot 10 — RDS connectivity section showing the DB Subnet Group and Security Group
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-rds-multi-az-publicly-accessible-no1.png)
+![Assignment 5 screenshot](screenshots/ass05-rds-multi-az-publicly-accessible-no2.png)
 
 ---
 
@@ -104,13 +105,21 @@ Create a Launch Template whose user data installs the web-server runtime, deploy
 
 #### Screenshot 11 — Launch Template details showing that user data exists, including a visible snippet
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-launch-template-user-data.png)
+![Assignment 5 screenshot](screenshots/ass05-launch-template-user-data1.png)
 
 ---
 
 #### Screenshot 12 — A running instance created from the template showing the application responds on port 80
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-instance-created-4rm-template-response-port80.png)
+![Assignment 5 screenshot](screenshots/ass05-this-site-cannot-be-reached.png)
+
+This is expected because the EC2 Security Group (ha-web-sg) was configured to accept HTTP (port 80) traffic only from the Application Load Balancer Security Group (ha-alb-sg)
+
+![Assignment 5 screenshot](screenshots/ass05-this-site-can-be-reached.png)
+
+EC2 launched successfully on the browser with IP http://75.101.214.143/. User Data ran correctly, WordPress is working and Port 80 is open. Now Launch Template is ready for Auto Scaling.
 
 ---
 
@@ -124,13 +133,13 @@ Create an internet-facing ALB across both public subnets with an HTTP listener a
 
 #### Screenshot 13 — ALB details showing two public subnets in two Availability Zones
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-alb-details-2-public-subnets-availabilityzones.png)
 
 ---
 
 #### Screenshot 14 — Target group showing at least one healthy target
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-target-group-showing-healthytargets.png)
 
 ---
 
@@ -144,13 +153,13 @@ Create an Auto Scaling Group from the Launch Template across both public subnets
 
 #### Screenshot 15 — Auto Scaling Group showing desired, minimum, and maximum capacity and the selected subnet Availability Zones
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-auto-scaling-group-showing-min-max.png)
 
 ---
 
 #### Screenshot 16 — EC2 instances list showing two running instances in different Availability Zones
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-ec2-instances-showing-availability-zones.png)
 
 ---
 
@@ -164,13 +173,16 @@ Confirm the application communicates with the RDS database through the ALB DNS n
 
 #### Screenshot 17 — Browser showing the application loaded through the ALB DNS name with the URL visible
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-ass05-application-load-through-alb-dns.png)
 
 ---
 
 #### Screenshot 18 — Proof of a database write through a UI message or database query output
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-database-write-onWordpress.png)
+http://ha-alb-931367350.us-east-1.elb.amazonaws.com/index.php/2026/08/16/solomon-anichebe-did-ha-database-write-test-to-wordpress/
+
+This successfully demonstrated: Browser → ALB → EC2 → WordPress → RDS WRITE
 
 ---
 
@@ -184,26 +196,51 @@ Test A: terminate one web instance and confirm the Auto Scaling Group replaces i
 
 #### Screenshot 19 — EC2 showing the terminated instance and the newly launched instance
 
-Add your screenshot here.
+Two running instance before ternination
+
+![Assignment 5 screenshot](screenshots/ass05-2-running-instance-b4-termination.png)
+
+After a short period, the ASG should launch a replacement showing terminating
+
+![Assignment 5 screenshot](screenshots/ass05-asg-showing-terminating.png)
+
+Now showing Inservice for a new replacement instance
+
+![Assignment 5 screenshot](screenshots/ass05-asg-showing-inservice.png)
+
+Which can be confirmed from the EC2 instance
+
+![Assignment 5 screenshot](screenshots/ass05-ec2-newinstance-replacement.png)
 
 ---
 
 #### Screenshot 20 — Target group showing healthy targets after replacement
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-target-group-showing-healthy-target.png)
 
 ---
 
 #### Screenshot 21 — Evidence that an instance was removed, detached, placed in Standby, or stopped in one Availability Zone
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-instance-evidence-summary1.png)
+
+Placed in standby, a new instance is regenerated
+
+![Assignment 5 screenshot](screenshots/ass05-instance-standby-evidence-summary2.png)
+
+Ec2 instance
+
+![Assignment 5 screenshot](screenshots/ass05-ec3-showing-newinstance-summary3.png)
 
 ---
 
 #### Screenshot 22 — Browser showing that the ALB DNS endpoint still works during the change
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-alb-termination-standby-wordpres-summary-ok.png)
 
+![Assignment 5 screenshot](screenshots/ass05-terminsation-standby-wordpres-endpoint-ok.png)
+
+ALB DNS endpoint: http://ha-alb-931367350.us-east-1.elb.amazonaws.com/
 ---
 
 # Task 9 — Architecture and Test-Results Summary
@@ -216,7 +253,7 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 #### Screenshot 23 — A simple architecture diagram (hand-drawn is fine), or an AWS console overview showing the components
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-simple-architecture-diagram.png)
 
 ---
 
@@ -224,7 +261,37 @@ Add your screenshot here.
 
 Write a short summary covering the network, ALB/ASG setup, RDS setup, and the results of Test A and Test B.
 
-Write your answer here.
+The application is a three-tier architecture deployed inside an AWS VPC using a Multi-AZ architecture. The VPC was divided into public and private subnets across two Availability Zones. The Application Load Balancer (ALB) was configured across the public subnets so that users could access the application through the ALB DNS endpoint. The ALB uses a target group to distribute HTTP traffic to healthy EC2 web instances.
+
+The web servers run WordPress on Ubuntu with Apache and are managed by an Auto Scaling Group (ASG). The ASG maintains the required number of web instances across the Availability Zones. Health checks from the ALB determine whether an EC2 instance is available to receive traffic. If a web instance fails, the Auto Scaling Group can automatically launch a replacement instance.
+
+The WordPress database is hosted on Amazon RDS MySQL using the database ha-db. The RDS database is located in the private database subnets and is not directly exposed to the Internet. The EC2 WordPress servers connect to RDS using the RDS endpoint ha-db.cg7owa8igc8t.us-east-1.rds.amazonaws.com. The RDS setup uses Multi-AZ capability to improve database availability.
+
+**High Availability Test A — EC2 Instance Failure**
+For Test A, one web EC2 instance was terminated intentionally. The Auto Scaling Group detected that the instance was no longer available and automatically launched a replacement instance. The EC2 console showed the original instance in the Terminated state and the newly launched instance in the Running/InService state. After the replacement instance completed its startup and health checks, it was registered with the target group and became healthy.
+The remaining web instance continued serving application traffic through the ALB while the replacement was being created. This demonstrated that the Auto Scaling Group can automatically restore lost web-server capacity.
+
+**High Availability Test B — Availability Zone Impact**
+For Test B, web capacity in one Availability Zone was temporarily removed from service by placing an instance in Standby/stopping or otherwise removing it from active service. The remaining web instance in the other Availability Zone continued to serve traffic through the ALB. The target group continued to have a healthy target, and the application remained accessible through the ALB DNS endpoint.
+This demonstrated that the application can continue operating when web-server capacity in one Availability Zone is temporarily unavailable.
+
+**Summary**
+The completed architecture demonstrates High Availability at the web tier through the combination of a Multi-AZ Application Load Balancer, Auto Scaling Group, healthy target checks, and multiple EC2 web instances across Availability Zones. The database tier is provided by private Multi-AZ Amazon RDS MySQL. Test A demonstrated automatic EC2 replacement by the Auto Scaling Group, while Test B demonstrated that the application remained available when web capacity in one Availability Zone was impacted.
+Therefore, the purpose is not only to deploy WordPress, but to demonstrate a more reliable production-style design that can tolerate the loss of an individual web server and temporary loss of web capacity in one Availability Zone.
+
+This three-tier design has each major responsibility is separated:
+
+The ALB handles access and traffic distribution.
+
+The EC2 web tier handles application processing.
+
+RDS handles persistent data storage.
+
+The ASG provides automatic recovery and scaling for the web tier.
+
+Multi-AZ deployment reduces dependence on one Availability Zone.
+
+Private subnets protect the database from direct Internet exposure.
 
 ---
 
@@ -240,13 +307,13 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/enXqTyqr`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-linkedln-post.png)
 
 ---
 

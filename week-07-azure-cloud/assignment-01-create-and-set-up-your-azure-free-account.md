@@ -30,13 +30,13 @@ Sign in to the Azure Portal, locate key services (Resource Groups, Virtual Machi
 
 #### Screenshot 1 — Azure Portal homepage after successful login
 
-Add your screenshot here.
+![Assignment 1 screenshot](screenshots/ass01-azure-portal.png)
 
 ---
 
 #### Screenshot 2 — "Subscriptions" section showing the "Free Trial" subscription
 
-Add your screenshot here.
+![Assignment 1 screenshot](screenshots/ass01-subscriptions-showing-subscription1.png)
 
 ---
 
@@ -44,7 +44,7 @@ Add your screenshot here.
 
 Write a three-to-four-line paragraph explaining which Azure services you plan to explore first and why.
 
-Write your answer here.
+I plan to explore my Azure subscription cost first so I can understand my available free credit and monitor my usage. After that, I will explore Azure Virtual Machines using an eligible free-tier size. This approach will help me learn how cloud resources affect costs and avoid unexpected charges. I will also review the VM’s estimated cost before deploying it.
 
 ---
 

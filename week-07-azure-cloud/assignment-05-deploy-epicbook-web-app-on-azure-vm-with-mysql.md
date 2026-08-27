@@ -20,19 +20,21 @@ Create a VNet (10.0.0.0/16) with a public subnet (10.0.1.0/24) for the VM and a 
 
 #### Screenshot 1 — Virtual Network overview showing the 10.0.0.0/16 address space and both subnets
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-virtual.network-overview.png)
 
 ---
 
 #### Screenshot 2 — Public and private NSG inbound rules showing ports 80, 22, and restricted 3306 access
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-public-nsg-inbound-rules-80-22.png)
+
+![Assignment 5 screenshot](screenshots/ass05-private.nsg-inbound-rules-3306.png)
 
 ---
 
 #### Screenshot 3 — Public IP and Network Interface association for the Virtual Machine
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-overview-detail1.png)
 
 ---
 
@@ -46,13 +48,15 @@ Launch an Ubuntu 22.04 LTS VM (Standard B1s or equivalent) in the public subnet,
 
 #### Screenshot 4 — Virtual Machine overview showing Ubuntu, size, public IP, and subnet
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-overview-detail2.png)
 
 ---
 
 #### Screenshot 5 — Terminal showing successful software installation or installed-version checks
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-software-installation.png)
+
+![Assignment 5 screenshot](screenshots/ass05-software-version.png)
 
 ---
 
@@ -66,19 +70,24 @@ Clone the EpicBook repository, install dependencies, build the frontend, configu
 
 #### Screenshot 6 — Terminal showing the EpicBook repository cloned and dependencies installed
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-epicbook-repository-cloned.png)
+
+![Assignment 5 screenshot](screenshots/ass05-epicbook-dependency-installed.png)
+
 
 ---
 
 #### Screenshot 7 — Nginx configuration or service status proving the frontend is configured to be served
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-nginx-config-service-status-frontend-ok1.png)
+![Assignment 5 screenshot](screenshots/ass05-nginx-config-service-status-frontend-ok.png)
 
 ---
 
 #### Screenshot 8 — Backend process or listening-port evidence (without exposing environment-variable secrets)
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-backend-process-listening-port-evidence.png)
+![Assignment 5 screenshot](screenshots/ass05-backend-process-listening-port-evidence1.png)
 
 ---
 
@@ -92,19 +101,19 @@ Create a private Azure Database for MySQL Flexible Server (VNet Integration) in 
 
 #### Screenshot 9 — MySQL Flexible Server overview showing Private access (VNet Integration)
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-mysql-flexible-server-overview.png)
 
 ---
 
 #### Screenshot 10 — Networking configuration showing the private subnet and restricted access
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-networking-configuration-private-access.png)
 
 ---
 
 #### Screenshot 11 — MySQL Client output showing the EpicBook database or imported tables (no password visible)
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-mysql-client-showing-epicbook-database-imported-tables.png)
 
 ---
 
@@ -118,13 +127,13 @@ Confirm the EpicBook application loads through the VM's public IP and that viewi
 
 #### Screenshot 12 — Browser showing the EpicBook application with the Virtual Machine public IP visible
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-browser-epicbook-vm-pub-ip.png)
 
 ---
 
 #### Screenshot 13 — Proof of a successful database-backed action (viewing products, adding to cart, or placing an order)
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/ass05-successful-databae-backed-action.png)
 
 ---
 
@@ -132,7 +141,7 @@ Add your screenshot here.
 
 Paste the public IP URL of your Virtual Machine here:
 
-`Add your URL here`
+`20.164.115.127`
 
 ---
 

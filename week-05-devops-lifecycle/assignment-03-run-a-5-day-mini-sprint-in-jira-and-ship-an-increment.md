@@ -20,13 +20,14 @@ Create the footer Story (`Add footer with version and deploy date`, 1 point, `fr
 
 #### Screenshot 1 — Sprint 1 created with the Story inside it
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-sprint1-story.png)
 
 ---
 
 #### Screenshot 2 — Active Sprint board showing the Sprint Goal
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-active-sprint-board-goal1.png)
+![Assignment 3 screenshot](screenshots/ass03-active-sprint-board-goal2.png)
 
 ---
 
@@ -40,25 +41,27 @@ Add the required footer text (`Pravin Mishra Portfolio v1.0 — Deployed on <DD 
 
 #### Screenshot 3 — Jira board showing the Day 1 Sub-task in Done
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-jiraboard-day1-subtask-done.png)
+![Assignment 3 screenshot](screenshots/ass03-jiraboard-day1-subtask-done2.png)
 
 ---
 
 #### Screenshot 4 — Successful Git commit output
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-git-commit-output.png)
 
 ---
 
 #### Screenshot 5 — EC2 browser view showing the complete footer text, with the URL visible
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-ec2-browser-view.png)
+![Assignment 3 screenshot](screenshots/ass03-ec2-browser-view1.png)
 
 ---
 
 #### Screenshot 6 — Jira Story comment showing the Day 1 Daily Scrum update
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-jira-story-day1-daily-scrum-update.png)
 
 ---
 
@@ -72,25 +75,25 @@ Update the footer so the deployment date is generated automatically (or updated 
 
 #### Screenshot 7 — Code editor showing the footer and date logic or deployment-time template snippet
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-vscode-date-logic.png)
 
 ---
 
 #### Screenshot 8 — EC2 browser view showing the updated footer with the current date
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-ec2-browser-currentdate.png)
 
 ---
 
 #### Screenshot 9 — README snippet documenting the footer and date behavior
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-readme-documentation.png)
 
 ---
 
 #### Screenshot 10 — Jira Story comment showing the Day 2 Daily Scrum update
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-jira-story-day2-dailyscrumupdate.png)
 
 ---
 
@@ -104,19 +107,19 @@ Improve the footer's spacing, contrast, and readability, then validate it at bot
 
 #### Screenshot 11 — Desktop EC2 view showing the polished footer
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-desktopview-ec2-footer.png)
 
 ---
 
 #### Screenshot 12 — Mobile responsive view showing the footer remains readable
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-mobileview-ec2-footer.png)
 
 ---
 
 #### Screenshot 13 — Jira Story comment showing the Day 3 Daily Scrum update
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-jira-story-day3-dailyscrumupdate.png)
 
 ---
 
@@ -130,7 +133,7 @@ Replace the existing homepage tagline with the required DMI Website call-to-acti
 
 #### Screenshot 14 — EC2 browser view showing "Start your DevOps Journey here" and the clickable "Visit the DMI Website" link
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-ec2-browserview-clickable-DMI.png)
 
 ---
 
@@ -144,19 +147,19 @@ Record a two-to-three-minute demo video of the shipped footer, add a retrospecti
 
 #### Screenshot 15 — Burndown Chart for Sprint 1
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-burndown-chart-sprint1.png)
 
 ---
 
 #### Screenshot 16 — Jira retrospective comment
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-jira-retrospective-comment2.png)
 
 ---
 
 #### Screenshot 17 — Final EC2 browser view showing the complete footer requirement
 
-Add your screenshot here.
+![Assignment 3 screenshot](screenshots/ass03-final-ec2-footer-view.png)
 
 ---
 
@@ -164,7 +167,7 @@ Add your screenshot here.
 
 Paste your unlisted YouTube or accessible Google Drive demo-video link here:
 
-`Add your URL here`
+`https://drive.google.com/file/d/1KGDA0Evo3mPYgVFup3YWYyedAMquKy4d/view?usp=sharing`
 
 ---
 

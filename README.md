@@ -87,14 +87,17 @@ Week 04 → Git & GitHub
 
 [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/)
 
-<!-- Week 05 → DevOps Lifecycle & Agile -->
-<!-- [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) -->
+Week 05 → DevOps Lifecycle & Agile
 
-<!-- Week 06 → AWS Cloud -->
-<!-- [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) -->
+[![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/)
 
-<!-- Week 07 → Azure Cloud -->
-<!-- [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/) -->
+Week 06 → AWS Cloud
+
+[![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/)
+
+Week 07 → Azure Cloud
+
+[![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/)
 
 <!-- Week 08 → Terraform -->
 <!-- [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/) -->
@@ -139,8 +142,8 @@ Week 04 → Git & GitHub
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved  | https://www.linkedin.com/posts/solomonanichebe_join-the-dmi-devops-micro-internship-share-7482128586729111552-9nck/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | https://medium.com/@jobcreation2009/my-week-2-journey-into-agentic-ai-for-devops-ae40294a053b |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/solomonanichebe_devops-git-aws-activity-7487251731937058817-KrfS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | https://medium.com/@jobcreation2009/deploying-the-epicreads-static-portfolio-to-an-ubuntu-ec2-with-nginx-a-hands-on-devops-exercise-b71ba48194ff?postPublishedType=initial |
 | 04 | Git & GitHub | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/solomonanichebe_dmibypravinmishra-devops-git-share-7486361979255685121-09xr/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | https://medium.com/@jobcreation2009/how-ai-and-git-safety-checks-strengthen-devops-workflow-cb468847a7b2 |
-| 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
-| 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
+| 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | — | — |
+| 06 | AWS Cloud | ✅ Completed | ✅ Solved | https://lnkd.in/p/enXqTyqr | https://medium.com/@jobcreation2009/building-a-highly-available-three-tier-wordpress-application-on-aws-9356bbe075b9 |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |

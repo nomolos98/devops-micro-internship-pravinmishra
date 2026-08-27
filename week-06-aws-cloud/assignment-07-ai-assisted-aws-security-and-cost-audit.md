@@ -20,7 +20,7 @@ Confirm your AWS CLI is authenticated and can see the S3 bucket, EC2 instance(s)
 
 #### Screenshot 1 — Terminal showing your AWS identity and your S3, EC2, and RDS resources listed
 
-Add your screenshot here.
+![Assignment 7 screenshot](screenshots/ass07-terminal-showing-aws-identity.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create a `CLAUDE.md` in your workspace that tells Claude the audit script is rea
 
 #### Screenshot 2 — `CLAUDE.md` open showing the project overview and safety rules
 
-Add your screenshot here.
+![Assignment 7 screenshot](screenshots/ass07-claude-md-overview.png)
 
 ---
 
@@ -48,7 +48,7 @@ Ask Claude Code to propose a read-only audit plan covering five checks — S3 pu
 
 #### Screenshot 3 — Claude's proposed five-check audit plan
 
-Add your screenshot here.
+![Assignment 7 screenshot](screenshots/ass07-claude-proposed-five-check-audit-plan.png)
 
 ---
 
@@ -62,8 +62,11 @@ Write a Bash script that runs the five checks from Task 3 using only read-only A
 
 #### Screenshot 4 — The script open in your editor, showing the checks and the report logic
 
-Add your screenshot here.
+![Assignment 7 screenshot](screenshots/ass07-claude-proposed-five-check-audit-plan.png)
 
+![Assignment 7 screenshot](screenshots/ass07-claude-proposed-five-check-audit-plan1.png)
+
+![Assignment 7 screenshot](screenshots/ass07-claude-proposed-five-check-audit-plan2.png)
 ---
 
 # Task 5 — Run the Baseline Audit
@@ -76,7 +79,7 @@ Run the script against your live AWS account and review the report honestly, not
 
 #### Screenshot 5 — Script output showing your Full Name and all five check results
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass07-script-output-showing-full-name-fivecheckresults.png)
 
 ---
 
@@ -90,13 +93,17 @@ Turn the script into a Claude Code skill named `/aws-audit` that runs the script
 
 #### Screenshot 6 — Skill file showing the restricted tool access
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass07-skill-file-restricted-tool.png)
+
+The /aws-audit is restricted to only these tools: allowed-tools: Bash, Read, Grep
 
 ---
 
 #### Screenshot 7 — `/aws-audit` output showing the findings and Claude's recommendation
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass07-aws-audit-findings-recommendation1.png)
+
+![Assignment 6 screenshot](screenshots/ass07-aws-audit-findings-recommendation.png)
 
 ---
 
@@ -110,13 +117,17 @@ Pick one real finding from your baseline report (or deliberately open a security
 
 #### Screenshot 8 — Terminal output of the remediation command you ran yourself
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass07-terminal-output-remediation-command.png)
+
+This command create an inbound SSH rule that permits port 22 only from my current public IPv4 address using the /32 CIDR range.
 
 ---
 
 #### Screenshot 9 — Second script run showing the finding now passing
 
-Add your screenshot here.
+![Assignment 6 screenshot](screenshots/ass07-ssh-not-expose-2internet.png)
+
+The second audit confirmed that SSH is not exposed to the entire internet. This verifies that the SSH-open-to-the-world check is passing after the remediation.
 
 ---
 
@@ -124,7 +135,25 @@ Add your screenshot here.
 
 Map this assignment to Gather → Analyze → Human Act → Verify: which step did the script perform, which did Claude perform, and why must the remediation command always be run by you and never by Claude?
 
-Add your answer here
+## Gather → Analyze → Human Act → Verify
+
+This assignment follows a **Gather → Analyze → Human Act → Verify** security workflow.
+
+**Gather:** The Bash audit script, `scripts/aws-audit.sh`, performed the evidence gathering. It used read-only AWS CLI commands to check S3 public-access controls, SSH port 22 exposure, MySQL port 3306 exposure, RDS public accessibility, and EBS encryption. It saved the results in `reports/aws-audit-report.txt`.
+
+**Analyze:** Claude Code performed the analysis through the `/aws-audit` skill. It read `CLAUDE.md`, ran the audit script, reviewed the report, identified the S3 failure and RDS warning, explained the security risks, and recommended remediation and verification commands.
+
+**Human Act:** I reviewed and manually ran the AWS CLI command to allow SSH only from my current public IP address using a `/32` CIDR rule.
+
+**Verify:** I reran `./scripts/aws-audit.sh` and checked the updated report. The SSH finding showed:
+
+```text
+[PASS] No security group rule allows SSH (port 22) from 0.0.0.0/0
+```
+
+The remediation command must be run by me, not Claude, because it changes real AWS resources. Commands such as `aws ec2 authorize-security-group-ingress`, `aws ec2 revoke-security-group-ingress`, and `aws s3api put-public-access-block` can affect network access, security, application availability, and cost.
+
+Claude is limited to gathering evidence, analyzing results, and recommending commands. A human must review the exact command, confirm its impact, and intentionally apply the change. This reduces the risk of accidental exposure, loss of EC2 access, unintended downtime, or incorrect changes to AWS resources.
 
 ---
 
