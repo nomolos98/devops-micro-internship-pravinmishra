@@ -20,7 +20,7 @@ Choose Team Mode or Solo Mode, and document how each Scrum role (Product Owner, 
 
 #### Screenshot 1 — Jira "Create project" screen, or the project sidebar after creation
 
-Add your screenshot here.
+![Assignment 4 screenshot](screenshots/ass04-gotto-job-Jira-project-overview.png)
 
 ---
 
@@ -28,7 +28,15 @@ Add your screenshot here.
 
 Write one line for each role: PO (what you prioritized), SM (how you ensured process), Dev Lead (what you built), DevOps Lead (how you shipped).
 
-Write your answer here.
+SOLO MODE
+
+PO: I prioritized the website improvements that would make the job platform clearer, easier to use, and more trustworthy for users.
+
+SM: I ensured the team followed the sprint process by confirming the requirements, tracking tasks, and preventing unnecessary scope changes.
+
+Dev Lead: I reviewed the Gotto Job code and made a small front-end improvement without changing the backend.
+
+DevOps Lead: I committed the update to Git, deployed it to the live environment, and tested the result in the browser.
 
 ---
 
@@ -42,7 +50,8 @@ Create a Team-managed Scrum project named `Gotto Job – Team <#>` (Team Mode) o
 
 #### Screenshot 2 — Project created page showing the project name and key
 
-Add your screenshot here.
+![Assignment 4 screenshot](screenshots/ass04-gotto-job-Jira-project-overview.png)
+![Assignment 4 screenshot](screenshots/ass04-gotto-job-Jira-project-detail.png)
 
 ---
 
@@ -56,7 +65,7 @@ Create the Epic `Improve Gotto Job UI discoverability & trust` to group the UI i
 
 #### Screenshot 3 — Backlog showing the Epic panel with the Epic visible
 
-Add your screenshot here.
+![Assignment 4 screenshot](screenshots/ass04-gotto-job-backlog-epic-panel.png)
 
 ---
 
@@ -70,13 +79,13 @@ Create at least six Stories under the Epic, estimate each with 1, 2, or 3 story 
 
 #### Screenshot 4 — Backlog showing the Epic and at least six Stories under it
 
-Add your screenshot here.
+![Assignment 4 screenshot](screenshots/ass04-gotto-job-backlog-six-stories.png)
 
 ---
 
 #### Screenshot 5 — One Story opened showing its Story Points and acceptance criteria filled in
 
-Add your screenshot here.
+![Assignment 4 screenshot](screenshots/ass04-gotto-story-points-filled.png)
 
 ---
 
@@ -90,7 +99,7 @@ Confirm the Story Points (1, 2, or 3) for each Story and record brief reasoning 
 
 #### Screenshot 6 — Backlog showing Story Points visible, or two or three Stories opened showing their points
 
-Add your screenshot here.
+![Assignment 4 screenshot](screenshots/ass04-gotto-job-backlog-showing-story-points-visible.png)
 
 ---
 
@@ -98,7 +107,23 @@ Add your screenshot here.
 
 For each story, explain in one or two lines why it is a 1, 2, or 3 (mention any debate, even in Solo Mode).
 
-Write your answer here.
+## Story Point Estimates and Debate Notes
+
+| Story | Final Estimate | Reason |
+|---|---:|---|
+| **Story 1: Hero tagline clarity** | **1** | Estimated as 1 because it mainly requires updating the hero text and checking its mobile wrapping. I briefly considered a higher estimate for responsive testing, but the implementation remains simple and low-risk. |
+| **Story 2: Primary CTA color** | **1** | Estimated as 1 because it is primarily a CSS change involving the button background, hover state, and text readability. The review confirmed that it was straightforward and did not require major code changes. |
+| **Story 4: Footer trust links** | **1** | Estimated as 1 because adding the About and Contact links is a small navigation and markup change. I considered the need to verify keyboard focus and routing, but the overall effort was still minimal. |
+| **Story 5: Job card typography** | **2** | Estimated as 2 because it requires adjusting the job title styles and checking spacing, visual hierarchy, and responsive behavior. The discussion considered 1 point, but the additional layout verification made 2 more appropriate. |
+| **Story 6: Remote badge** | **2** | Estimated as 2 because the work involves identifying remote listings, adding the `REMOTE` badge, and styling it without disrupting the card layout. In Solo Mode, I debated between 1 and 2, but the conditional display and testing justified 2 points. |
+| **Story 7: Posted on date text** | **1** | Estimated as 1 because a static human-readable date can be added to each card with minimal markup and formatting work. I considered the need to check all cards, but it was not complex enough to require 2 points. |
+| **Story 8: Advanced search labels** | **2** | Estimated as 2 because it involves updating multiple form labels or placeholders and verifying alignment, readability, and mobile responsiveness. I considered 1 point, but the changes across several search fields supported a 2-point estimate. |
+
+## Reflection
+The stories in this backlog are intentionally limited to UI only improvements. They do not involve backend development, database changes, authentication, complex API integration, or major infrastructure work. Therefore, estimates of 1 and 2 accurately reflect the expected effort.
+The 1-point stories involve simple changes such as updating text, adding links, changing colors, or adding a button. 
+The 2-point stories require changes across a component or page, together with responsive, visual, and accessibility testing
+A 3-point story would normally involve large, complex logic, extensive testing, or greater deployment risk. A 3-point estimate could have been appropriate if the Remote Badge story required backend logic to identify remote jobs dynamically, or if the Advanced Search story required new search functionality connected to a database. Since those requirements are outside the current scope, no story was estimated at 3 points.
 
 ---
 
@@ -112,13 +137,13 @@ Create Sprint 1, move three or four Stories into it (approximately 3–6 points)
 
 #### Screenshot 7 — Sprint 1 with the selected Stories inside it
 
-Add your screenshot here.
+![Assignment 4 screenshot](screenshots/ass04-gotto-job-sprint1-selected-stories.png)
 
 ---
 
 #### Screenshot 8 — One Story showing the Sub-tasks created
 
-Add your screenshot here.
+![Assignment 4 screenshot](screenshots/ass04-gotto-job-one-story-showing-subttasks.png)
 
 ---
 
@@ -132,7 +157,7 @@ Open the Burndown Chart and confirm it exists for Sprint 1. It is acceptable if 
 
 #### Screenshot 9 — Burndown Chart page opened, even if empty
 
-Add your screenshot here.
+![Assignment 4 screenshot](screenshots/ass04-gotto-job-burndown-chart-page.png)
 
 ---
 
@@ -146,19 +171,19 @@ Implement one small UI-only Story from Sprint 1, commit it, deploy it live, and 
 
 #### Screenshot 10 — Jira board showing the Story moved to Done
 
-Add your screenshot here.
+![Assignment 4 screenshot](screenshots/ass04-gotto-story-done.png)
 
 ---
 
 #### Screenshot 11 — Git commit output
 
-Add your screenshot here.
+![Assignment 4 screenshot](screenshots/ass04-gotto-story-commit.png)
 
 ---
 
 #### Screenshot 12 — Live URL in the browser showing the UI change, with the URL visible
 
-Add your screenshot here.
+![Assignment 4 screenshot](screenshots/ass04-liive-url-browser.png)
 
 ---
 
@@ -172,7 +197,7 @@ Add a retro comment covering what went well, what to improve, one Scrum pillar o
 
 #### Screenshot 13 — Jira retro comment visible
 
-Add your screenshot here.
+![Assignment 4 screenshot](screenshots/ass04-gotto-story-retro-notes.png)
 
 ---
 
@@ -188,13 +213,13 @@ Publish a LinkedIn post about what you delivered, including your live URL, three
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://lnkd.in/p/edimJuuR`
 
 ---
 
 #### Screenshot 14 — Published LinkedIn post
 
-Add your screenshot here.
+![Assignment 4 screenshot](screenshots/ass04-linkedln-post.png)
 
 ---
 
