@@ -1,4 +1,4 @@
-# Assignment 6 — Capstone: Deploy Book Review App (Three-Tier Architecture) on AWS
+# Assignment 6 — Capstone Assignment — Deploy Book Review App (Three-Tier Architecture) on AWS
 
 Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
@@ -38,7 +38,7 @@ US East (N. Virginia) — us-east-1
 
 ---
 
-**Services used:**
+**Services:**
 
 Amazon VPC, VPC Subnets, Route Tables, Internet Gateway, NAT Gateway, Amazon EC2, Application Load Balancer (public ALB), Internal Application Load Balancer, Security Groups, and Amazon RDS for MySQL with Multi-AZ, Auto Scaling, and CloudWatch.
 
@@ -68,40 +68,40 @@ Capture visual proof of every tier and load balancer.
 
 ### Evidence
 
-#### Screenshot 1 — Web Tier EC2 instance in a public subnet
+#### Web EC2
 
 ![Assignment 6 screenshot](screenshots/ass06-web-tier-ec2-public-subnet.png)
 
 ---
 
-#### Screenshot 2 — App Tier EC2 instance in a private subnet
+#### App EC2
 
 ![Assignment 6 screenshot](screenshots/ass06-web-tier-ec2-private-subnet.png)
 
 ---
 
-#### Screenshot 3 — Public Application Load Balancer configuration or healthy targets
+#### Public ALB
 
 ![Assignment 6 screenshot](screenshots/ass06-public-application-load-balancer.png)
 ![Assignment 6 screenshot](screenshots/ass06-public-application-load-balancer2.png)
 
 ---
 
-#### Screenshot 4 — Internal Application Load Balancer configuration or healthy targets
+#### Internal ALB
 
 ![Assignment 6 screenshot](screenshots/ass06-internal-application-load-balancer.png)
 ![Assignment 6 screenshot](screenshots/ass06-internal-application-load-balancer2.png)
 
 ---
 
-#### Screenshot 5 — Amazon RDS for MySQL showing Multi-AZ and the read replica
+#### RDS + Replica
 
 ![Assignment 6 screenshot](screenshots/ass06-rds-showing-multi-az-read-replica.png)
 ![Assignment 6 screenshot](screenshots/ass06-rds-showing-multi-az-read-replica2.png)
 
 ---
 
-#### Screenshot 6 — Book Review App UI working through the public ALB
+#### App UI proof
 
 ![Assignment 6 screenshot](screenshots/ass06-book-review-app-through-public-alb.png)
 
@@ -141,7 +141,7 @@ Nginx returned 200 OK on port 80 and successfully proxied requests to Next.js.
 
 ---
 
-**Issues encountered and fixes:**
+**Issues + fixes:**
 
 Issue 1 — SSH connection to App EC2 timed out
 ssh -i epicbook.pem ubuntu@10.0.11.24
@@ -190,7 +190,7 @@ Paste your LinkedIn post URL here:
 
 ---
 
-#### Screenshot — Published LinkedIn post
+#### Screenshot of LinkedIn post
 
 ![Assignment 6 screenshot](screenshots/ass06-linkedln-post.png)
 

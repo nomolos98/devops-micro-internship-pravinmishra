@@ -142,15 +142,15 @@ Week 07 → Azure Cloud
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved  | https://www.linkedin.com/posts/solomonanichebe_join-the-dmi-devops-micro-internship-share-7482128586729111552-9nck/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | https://medium.com/@jobcreation2009/my-week-2-journey-into-agentic-ai-for-devops-ae40294a053b |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/solomonanichebe_devops-git-aws-activity-7487251731937058817-KrfS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | https://medium.com/@jobcreation2009/deploying-the-epicreads-static-portfolio-to-an-ubuntu-ec2-with-nginx-a-hands-on-devops-exercise-b71ba48194ff?postPublishedType=initial |
 | 04 | Git & GitHub | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/solomonanichebe_dmibypravinmishra-devops-git-share-7486361979255685121-09xr/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | https://medium.com/@jobcreation2009/how-ai-and-git-safety-checks-strengthen-devops-workflow-cb468847a7b2 |
-| 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://lnkd.in/p/edimJuuR | — |
-| 06 | AWS Cloud | ✅ Completed | ✅ Solved | https://lnkd.in/p/enXqTyqr | https://medium.com/@jobcreation2009/building-a-highly-available-three-tier-wordpress-application-on-aws-9356bbe075b9 |
-| 07 | Azure Cloud | ✅ Completed | ✅ Solved | — | — |
+| 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/solomonanichebe_scrum-jira-agile-activity-7499248764881244160--won?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY| https://medium.com/@jobcreation2009/from-backlog-to-live-website-my-gotto-job-scrum-sprint-experience-6416d410583e |
+| 06 | AWS Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/solomonanichebe_aws-awscloud-devops-activity-7495092778906021888-ThE9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | https://medium.com/@jobcreation2009/building-a-highly-available-three-tier-wordpress-application-on-aws-9356bbe075b9 |
+| 07 | Azure Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/solomonanichebe_azure-microsoftazure-devops-activity-7500309091072794624-udeJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | https://medium.com/@jobcreation2009/deploying-a-three-tier-book-review-app-on-azure-what-worked-and-what-i-learned-1ca402d81e81 |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
-| 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
+| 13 | Final Project | clear⬜ Not Started | ⏳ Pending | — | — |
 
 **Status:** ⬜ Not Started &nbsp;|&nbsp; 🔄 In Progress &nbsp;|&nbsp; ✅ Completed<br>
 **Assignment:** ⏳ Pending &nbsp;|&nbsp; ✅ Solved
