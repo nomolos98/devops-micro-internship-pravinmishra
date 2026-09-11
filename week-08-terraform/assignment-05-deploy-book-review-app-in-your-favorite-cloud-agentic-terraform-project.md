@@ -6,9 +6,9 @@ Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
 ## Student Details
 
-**Full Name:** Add your full name here  
-**Cloud Platform:** AWS or Azure  
-**GitHub Repository URL:** Add your repository URL here  
+**Full Name:** Solomon Anichebe 
+**Cloud Platform:** AWS
+**GitHub Repository URL:** https://github.com/nomolos98
 **Public Application URL / Load-Balancer DNS:** Add the public URL or DNS here
 
 ---
@@ -31,7 +31,8 @@ Prepare the Book Review App project and configure the provided Claude Code Agent
 
 Add a screenshot of the project `CLAUDE.md` showing the three-tier architecture, security boundaries, Terraform requirements, and human-approval rules.
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/week08-ass05-claude-requirement.png)
+![Assignment 5 screenshot](screenshots/week08-ass05-claude-requirement2.png)
 
 ---
 
@@ -39,7 +40,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Terraform Engineer subagent configuration.
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/week08-ass05-terraform-engineer-subagent-config.png)
 
 ---
 
@@ -47,7 +48,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Architecture and Security Reviewer subagent configuration.
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/week08-ass05-arch-security-reviewer-subagent-config.png)
 
 ---
 
@@ -55,7 +56,7 @@ Add your screenshot here.
 
 Add a screenshot showing Terraform MCP connected and available.
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/week08-ass05-terraform-mcp-connected.png)
 
 ---
 
@@ -63,7 +64,7 @@ Add your screenshot here.
 
 Add a screenshot showing the configured Claude Code validation hooks.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -106,7 +107,7 @@ Create the modular Terraform project and implement the network and security laye
 
 Add a screenshot showing the modular Terraform project structure.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -114,7 +115,7 @@ Add your screenshot here.
 
 Add a screenshot showing the six-subnet architecture across two availability locations.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -122,7 +123,7 @@ Add your screenshot here.
 
 Add a screenshot showing the public and private tier separation, including routing and security boundaries.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -138,7 +139,7 @@ Deploy the public and internal load balancers and the Web and Application comput
 
 Add a screenshot showing the Web and Application compute resources in their required subnets.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -146,7 +147,7 @@ Add your screenshot here.
 
 Add a screenshot showing the internet-facing public load balancer.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -154,7 +155,7 @@ Add your screenshot here.
 
 Add a screenshot showing the private internal load balancer.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -162,7 +163,7 @@ Add your screenshot here.
 
 Add a screenshot showing healthy target groups or backend pools.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -178,7 +179,7 @@ Deploy a private, highly available managed MySQL database with a read replica an
 
 Add a screenshot showing the managed MySQL database deployment.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -186,7 +187,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Multi-AZ or high-availability configuration.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -194,7 +195,7 @@ Add your screenshot here.
 
 Add a screenshot showing the read replica configuration.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -202,7 +203,7 @@ Add your screenshot here.
 
 Add a screenshot showing that the database is private and accepts MySQL traffic only from the Application Tier.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -218,7 +219,7 @@ Validate the Terraform configuration, review the execution plan using both Agent
 
 Add a screenshot showing successful `terraform validate` output.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -226,7 +227,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Terraform plan output.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -234,7 +235,7 @@ Add your screenshot here.
 
 Add a screenshot showing successful `terraform apply` completion.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -250,7 +251,7 @@ Deploy and configure the Book Review App across the Web, Application, and Databa
 
 Add a screenshot showing the Book Review App homepage through the public endpoint.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -258,7 +259,7 @@ Add your screenshot here.
 
 Add a screenshot showing successful login or authentication.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -266,7 +267,7 @@ Add your screenshot here.
 
 Add a screenshot showing the book listing or book details.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -274,7 +275,7 @@ Add your screenshot here.
 
 Add a screenshot showing the review functionality working successfully.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -282,7 +283,7 @@ Add your screenshot here.
 
 Add a screenshot showing that the backend or API is working successfully.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -290,7 +291,7 @@ Add your screenshot here.
 
 Add a screenshot showing successful database reads and writes.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ## Public Application URL
 
@@ -312,7 +313,7 @@ You do not need to submit your complete Claude Code conversation history. Includ
 
 Add a screenshot showing one useful example of AI-assisted Terraform generation or improvement.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -320,7 +321,7 @@ Add your screenshot here.
 
 Add a screenshot showing one structured architecture or security review result.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -328,7 +329,7 @@ Add your screenshot here.
 
 Add a screenshot showing one AI-assisted troubleshooting interaction based on collected evidence.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 

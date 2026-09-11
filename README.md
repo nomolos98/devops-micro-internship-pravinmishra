@@ -99,11 +99,13 @@ Week 07 → Azure Cloud
 
 [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/)
 
-<!-- Week 08 → Terraform -->
-<!-- [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/) -->
+Week 08 → Terraform
 
-<!-- Week 09 → Ansible -->
-<!-- [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) -->
+[![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/)
+
+Week 09 → Ansible
+
+[![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/)
 
 <!-- Week 10 → Azure DevOps CI/CD -->
 <!-- [![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/) -->
@@ -145,7 +147,7 @@ Week 07 → Azure Cloud
 | 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/solomonanichebe_scrum-jira-agile-activity-7499248764881244160--won?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY| https://medium.com/@jobcreation2009/from-backlog-to-live-website-my-gotto-job-scrum-sprint-experience-6416d410583e |
 | 06 | AWS Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/solomonanichebe_aws-awscloud-devops-activity-7495092778906021888-ThE9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | https://medium.com/@jobcreation2009/building-a-highly-available-three-tier-wordpress-application-on-aws-9356bbe075b9 |
 | 07 | Azure Cloud | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/solomonanichebe_azure-microsoftazure-devops-activity-7500309091072794624-udeJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | https://medium.com/@jobcreation2009/deploying-a-three-tier-book-review-app-on-azure-what-worked-and-what-i-learned-1ca402d81e81 |
-| 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
+| 08 | Terraform | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/solomonanichebe_devops-terraform-aws-activity-7502779895752749056-bmgi?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY | https://medium.com/@jobcreation2009/deploying-epicbook-on-aws-with-terraform-and-amazon-rds-mysql-fecfc621b77b |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
