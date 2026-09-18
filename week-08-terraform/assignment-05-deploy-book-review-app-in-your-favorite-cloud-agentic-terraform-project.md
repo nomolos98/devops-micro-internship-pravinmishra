@@ -7,9 +7,9 @@ Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 ## Student Details
 
 **Full Name:** Solomon Anichebe 
-**Cloud Platform:** AWS
+**Cloud Platform:** Azure
 **GitHub Repository URL:** https://github.com/nomolos98
-**Public Application URL / Load-Balancer DNS:** Add the public URL or DNS here
+**Public Application URL / Load-Balancer DNS:** http://4.253.165.48/
 
 ---
 
@@ -64,7 +64,10 @@ Add a screenshot showing Terraform MCP connected and available.
 
 Add a screenshot showing the configured Claude Code validation hooks.
 
-![Assignment 5 screenshot]
+The hook is registered for PostToolUse event. It occurs after the tool runs, not before. And triggers only on file edit/write actions — so reads, bash commands, etc. don't trigger it.
+
+![Assignment 5 screenshot](screenshots/week08-ass05-claude-code-validation-hooks.png)
+![Assignment 5 screenshot](screenshots/week08-ass05-claude-code-validation-hooks2.png)
 
 ---
 
@@ -91,7 +94,7 @@ The diagram must show:
 
 ## Architecture Diagram
 
-Add the completed architecture diagram here.
+![Assignment 5 screenshot](screenshots/week08-ass05-three-tier-architecture-design.png)
 
 ---
 
@@ -107,7 +110,7 @@ Create the modular Terraform project and implement the network and security laye
 
 Add a screenshot showing the modular Terraform project structure.
 
-![Assignment 5 screenshot]
+![Assignment 5 screenshot](screenshots/week08-ass05-modular-terraform-structure.png)
 
 ---
 
@@ -115,7 +118,7 @@ Add a screenshot showing the modular Terraform project structure.
 
 Add a screenshot showing the six-subnet architecture across two availability locations.
 
-![Assignment 5 screenshot]
+![Assignment 5 screenshot](screenshots/week08-ass05-six-subnet-architecture.png)
 
 ---
 
@@ -123,7 +126,17 @@ Add a screenshot showing the six-subnet architecture across two availability loc
 
 Add a screenshot showing the public and private tier separation, including routing and security boundaries.
 
-![Assignment 5 screenshot]
+nsg-web attached to Web subnets: Allow inbound 80/443 from Internet service tag
+
+![Assignment 5 screenshot](screenshots/week08-ass05-nsg-web-attached-web-subnets.png)
+
+nsg-app attached to App subnets: Allow inbound app port (e.g. 3001/tcp) only from Web subnet CIDRs (10.0.1.0/24, 10.0.2.0/24).
+
+![Assignment 5 screenshot](screenshots/week08-ass05-nsg-app-attached-app-subnets.png)
+
+nsg-db attached to DB subnets: Allow inbound DB port (e.g., 3306/tcp) only from App subnet CIDRs (10.0.11.0/24, 10.0.12.0/24).
+
+![Assignment 5 screenshot](screenshots/week08-ass05-nsg-db-attached-db-subnets.png)
 
 ---
 
@@ -139,7 +152,9 @@ Deploy the public and internal load balancers and the Web and Application comput
 
 Add a screenshot showing the Web and Application compute resources in their required subnets.
 
-![Assignment 5 screenshot]
+![Assignment 5 screenshot](screenshots/week08-ass05-web-application-resources.png)
+
+![Assignment 5 screenshot](screenshots/week08-ass05-web-application-subnet.png)
 
 ---
 
@@ -147,7 +162,7 @@ Add a screenshot showing the Web and Application compute resources in their requ
 
 Add a screenshot showing the internet-facing public load balancer.
 
-![Assignment 5 screenshot]
+![Assignment 5 screenshot](screenshots/week08-ass05-internet-facing-public-load-balancer.png)
 
 ---
 
@@ -155,7 +170,7 @@ Add a screenshot showing the internet-facing public load balancer.
 
 Add a screenshot showing the private internal load balancer.
 
-![Assignment 5 screenshot]
+![Assignment 5 screenshot](screenshots/week08-ass05-private-internal-load-balancer.png)
 
 ---
 
@@ -163,7 +178,7 @@ Add a screenshot showing the private internal load balancer.
 
 Add a screenshot showing healthy target groups or backend pools.
 
-![Assignment 5 screenshot]
+![Assignment 5 screenshot](screenshots/week08-ass05-healthy-backend-pools.png)
 
 ---
 
@@ -179,7 +194,7 @@ Deploy a private, highly available managed MySQL database with a read replica an
 
 Add a screenshot showing the managed MySQL database deployment.
 
-![Assignment 5 screenshot]
+![Assignment 5 screenshot](screenshots/week08-ass05-managed-mysql-database.png)
 
 ---
 
@@ -187,7 +202,8 @@ Add a screenshot showing the managed MySQL database deployment.
 
 Add a screenshot showing the Multi-AZ or high-availability configuration.
 
-![Assignment 5 screenshot]
+![Assignment 5 screenshot](screenshots/week08-ass05-high-availability.png)
+![Assignment 5 screenshot](screenshots/week08-ass05-high-availability2.png)
 
 ---
 
@@ -195,7 +211,7 @@ Add a screenshot showing the Multi-AZ or high-availability configuration.
 
 Add a screenshot showing the read replica configuration.
 
-![Assignment 5 screenshot]
+![Assignment 5 screenshot](screenshots/week08-ass05-read-replica.png)
 
 ---
 
@@ -203,7 +219,7 @@ Add a screenshot showing the read replica configuration.
 
 Add a screenshot showing that the database is private and accepts MySQL traffic only from the Application Tier.
 
-![Assignment 5 screenshot]
+![Assignment 5 screenshot](screenshots/week08-ass05-database-private-traffic4rm-applicationtier.png)
 
 ---
 
@@ -219,7 +235,7 @@ Validate the Terraform configuration, review the execution plan using both Agent
 
 Add a screenshot showing successful `terraform validate` output.
 
-![Assignment 5 screenshot]
+![Assignment 5 screenshot](screenshots/week08-ass05-terraform-validate.png)
 
 ---
 
@@ -227,7 +243,7 @@ Add a screenshot showing successful `terraform validate` output.
 
 Add a screenshot showing the Terraform plan output.
 
-![Assignment 5 screenshot]
+![Assignment 5 screenshot](screenshots/week08-ass05-terraform-plan.png)
 
 ---
 
@@ -235,7 +251,7 @@ Add a screenshot showing the Terraform plan output.
 
 Add a screenshot showing successful `terraform apply` completion.
 
-![Assignment 5 screenshot]
+![Assignment 5 screenshot](screenshots/week08-ass05-terraform-apply.png)
 
 ---
 
@@ -313,7 +329,8 @@ You do not need to submit your complete Claude Code conversation history. Includ
 
 Add a screenshot showing one useful example of AI-assisted Terraform generation or improvement.
 
-![Assignment 5 screenshot]
+![Assignment 5 screenshot](screenshots/week08-ass05-quest-answer-ai-assited.png)
+![Assignment 5 screenshot](screenshots/week08-ass05-quest-answer-ai-assited2.png)
 
 ---
 
@@ -321,7 +338,8 @@ Add a screenshot showing one useful example of AI-assisted Terraform generation 
 
 Add a screenshot showing one structured architecture or security review result.
 
-![Assignment 5 screenshot]
+![Assignment 5 screenshot](screenshots/week08-ass05-structured-security-review.png)
+![Assignment 5 screenshot](screenshots/week08-ass05-structured-security-review2.png)
 
 ---
 
@@ -329,7 +347,9 @@ Add a screenshot showing one structured architecture or security review result.
 
 Add a screenshot showing one AI-assisted troubleshooting interaction based on collected evidence.
 
-![Assignment 5 screenshot]
+![Assignment 5 screenshot](screenshots/week08-ass05-ai-assisted-troubleshooting-interaction.png)
+![Assignment 5 screenshot](screenshots/week08-ass05-ai-assisted-troubleshooting-interaction2.png)
+![Assignment 5 screenshot](screenshots/week08-ass05-ai-assisted-troubleshooting-interaction3.png)
 
 ---
 
@@ -368,67 +388,105 @@ Reflect on the architecture, Terraform implementation, and Agentic AI workflow. 
 
 ### 1. Why did you separate the Web, Application, and Database tiers?
 
-Write your answer here.
+I separated the application into three tiers so that each layer has a clear responsibility and security boundary:
+
+Web Tier: handles user-facing traffic through the public Load Balancer and Nginx.
+Application Tier: runs the backend/API and is accessed through the internal Load Balancer.
+Database Tier: stores application data in private MySQL database
+
+This separation improves security, maintainability, scalability, and troubleshooting because each tier can be managed independently.
 
 ### 2. Why is the Application Tier private?
 
-Write your answer here.
+The Application tier holds the backend's business logic and, more importantly, holds the database credentials and the code that queries MySQL directly. If it had a public IP or was reachable from the internet, an attacker could bypass the Web tier entirely, hit the API directly, or attempt to exploit the backend process itself. Keeping the backend private reduces its direct exposure to internet traffic and the only way in is through the internal load balancer, which only the Web tier can reach.
 
 ### 3. Why is MySQL private?
 
-Write your answer here.
+The database is the highest-value target in the whole architecture — it holds every user's data. It has no legitimate reason to ever be reached from the public internet; only the Application tier needs to talk to it. In this build, public_network_access = "Disabled" is set explicitly on the MySQL Flexible Server, and the DB NSG only allows inbound 3306 from the App tier subnet CIDRs (10.0.11.0/24, 10.0.12.0/24) — nothing else, not even the Web tier.
 
 ### 4. Why are multiple Availability Zones used?
 
-Write your answer here.
+I used multiple Availability Zones to improve availability and resilience. The Web and Application tiers are distributed across two zones. If one zone experiences a failure, the other zone can continue serving traffic, subject to the health of the remaining resources.
+This also prevents the application from depending on a single physical location within the Azure region.
 
 ### 5. What is the difference between Multi-AZ/high availability and a read replica?
 
-Write your answer here.
+High availability is a synchronous standby copy of the same database, kept in a different zone, that exists purely for automatic failover, you don't connect to it directly, and under normal operation it's invisible. If one VM or zone fails, the other can continue serving traffic.
+
+A read replica is primarily about database read scalability and providing another copy of database data.
+So:
+Multi-AZ/HA: focuses on availability/resilience.
+Read replica: provides another database copy, mainly for read workloads and related database use cases.
 
 ## Terraform
 
 ### 6. How did you divide your Terraform into modules?
 
-Write your answer here.
+divided the configuration into logical modules based on infrastructure responsibility, each owning one concern: network (VNet, subnets, NAT Gateways), security (NSGs and subnet associations), load-balancer (public and internal LBs), database (MySQL Flexible Server, replica, private DNS zone), bootstrap: Generates user‑data scripts for Web and App tiers (install Node, Nginx, PM2, clone repo, configure app) and compute Reusable VM module used for Web and App tiers (NIC, VM, identity).
 
 ### 7. How do the modules communicate through variables and outputs?
 
-Write your answer here.
+The modules communicate using inputs (variables) and outputs. For example, the network module creates subnets and exposes their IDs through outputs. The compute module can then receive those subnet IDs as variables.
+This pattern ensures clear contracts, modules don’t hard‑code resource IDs from other modules; they receive them as inputs.
 
 ### 8. What did you specifically check in `terraform plan`?
 
-Write your answer here.
+Beyond the basics (add/change/destroy counts), specific things this build's plans were checked for unexpected public IPs or 0.0.0.0/0 rules, whether zones was being set correctly depending on whether a resource referenced a subnet or a public IP, whether a proposed change would force a resource replacement rather than an in-place update, whether NSG rule access types were valid for the service tags they used, and whether outputs exposed anything sensitive. The recurring subnet delegation actions diff was also something worth specifically watching for, since it kept reappearing across multiple plans even after a successful apply.
 
 ## Agentic AI
 
 ### 9. What was the purpose of `CLAUDE.md`?
 
-Write your answer here.
+It was used to document the architecture goals.Capture constraints and decisions (region, SKUs, NSG rules, bootstrap approach). An instruction set every Claude Code session and subagent reads before doing anything, what patterns to follow, and what to avoid. The architecture spec (CIDR, six subnets, tier boundaries), the security rules (ports 3001 and 3306 never public), the Terraform engineering rules (modularity, no hardcoded secrets), and the safety rules (never auto-approve apply/destroy). 
+Serve as a single source of truth so AI assistance stays aligned with the intended design instead of making ad‑hoc assumptions.
+
 
 ### 10. What work did the Terraform Engineer subagent perform?
 
-Write your answer here.
+It designed and implemented every module phase by phase — networking, security, load balancing, database, bootstrap, and compute researching current Azure provider documentation via Terraform MCP before writing resources rather than relying purely on memory. Include tasks such as: reviewing the Terraform structure, generating/improving Terraform code, working with modules, checking variables and outputs, identifying configuration problems, helping implement the Azure infrastructure, validating Terraform changes against the project requirements
 
 ### 11. What did the Architecture and Security Reviewer identify?
 
-Write your answer here.
+The Architecture and Security Reviewer was used to examine the infrastructure from a design and security perspective, rather than simply generating code.
+It reviewed areas such as: separation of Web, App and Database tiers, private placement of the App and Database tiers, Load Balancer traffic flow, NSG/security boundaries, Availability Zone distribution, database networking, managed identity usage, Terraform architecture
+
+The review helped identify areas that needed attention before considering the infrastructure complete.
 
 ### 12. Why did you use Terraform MCP instead of relying only on Claude's existing Terraform knowledge?
 
-Write your answer here.
+Terraform MCP provided Claude with access to current, project-relevant Terraform/Azure information and tooling rather than relying entirely on the model's pre-existing knowledge.
+
+This was useful because Terraform providers and Azure resources can change over time. The clearest example in this build: before committing to zone-pinned NAT Gateways, the agent checked whether the chosen region (southafricanorth) actually supported Availability Zones by fetching Microsoft's live documentation rather than assuming — and it turned out to be correct, but a wrong assumption here would only have been caught after a failed apply
 
 ### 13. What was the purpose of your validation hooks?
 
-Write your answer here.
+The validation hooks were designed to catch problems before infrastructure was deployed. They provided automated checks around things such as: Terraform formatting > Terraform validation > Configuration checks > Plan/review > Apply
 
 ### 14. Describe one real issue Claude helped you troubleshoot.
 
-Write your answer here.
+The first terraform apply failed with four independent errors in a single run: MySQL's HA mode being incompatible with the Burstable SKU tier in Azure, VM creation failed with: SkuNotAvailable: Standard_B2s is currently not available in location 'SouthAfricaNorth'.
+
+Ran this to check available SKUs:
+az vm list-skus --location southafricanorth --resource-type virtualMachines \
+  --query "[?name=='Standard_B2s' || name=='Standard_B2s_v2' || name=='Standard_D2s_v5']" -o table
+
+Also, an NSG rule using the AzurePlatformDNS service tag with an Allow access type that Azure's API rejects outright, and a transient "connection reset" error creating the second NAT Gateway. Each was diagnosed from the raw Azure API error text rather than guessed at — for the NSG rule specifically, the root cause was confirmed by checking Microsoft's own documentation, which states that platform service tags like AzurePlatformDNS can only be used in Deny rules, since that traffic is already implicitly permitted and can't be additionally "allowed." Each fix was made and validated one at a time before retrying, rather than changing everything at once and hoping.
+
 
 ### 15. Describe one recommendation you reviewed, modified, or rejected instead of accepting blindly.
 
-Write your answer here.
+One important example was the recommendation to change either the VM size or region after Azure reported:
+
+SkuNotAvailable, Standard_B2s, SouthAfricaNorth
+
+Instead of blindly changing the VM size, I treated the recommendation as something to verify first.
+The next step was to check Azure's available VM SKUs:
+
+az vm list-skus \
+  --location southafricanorth \
+  --resource-type virtualMachines
+
+This is important because changing from Standard_B2s to another size affects cost, performance, and potentially Availability Zone availability. So the AI recommendation was reviewed against actual Azure capacity information before modifying Terraform.
 
 ---
 
@@ -442,7 +500,7 @@ Write the post in your own words, include at least one project image or other pr
 
 ## LinkedIn Post URL
 
-**LinkedIn Post URL:** Add your LinkedIn post URL here
+**LinkedIn Post URL:** https://www.linkedin.com/posts/solomonanichebe_devops-azure-terraform-activity-7506344512047464449-siVB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXBpdEBaUln31DVzGUPS7Q7mpZjlUYg8QY
 
 ---
 

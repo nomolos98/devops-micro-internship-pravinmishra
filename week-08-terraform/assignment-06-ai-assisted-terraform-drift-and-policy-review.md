@@ -6,8 +6,8 @@ Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
 ## Student Details
 
-**Full Name:** Add your full name here  
-**GitHub Repository/Folder URL:** Add your GitHub URL here
+**Full Name:** Solomon Anichebe
+**GitHub Repository/Folder URL:** https://github.com/nomolos98/devops-micro-internship-pravinmishra
 
 ---
 
@@ -40,7 +40,7 @@ Confirm that your Terraform configuration and deployed infrastructure are curren
 
 Add a screenshot of `terraform plan` showing no pending changes.
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/week08-ass06-terraform-plan.png)
 
 ---
 
@@ -48,17 +48,17 @@ Add your screenshot here.
 
 Add a screenshot of the folder structure showing `AI Assignment/`, `reports/`, and the Terraform project.
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/week08-ass06-folder-structure.png)
 
 ## Questions
 
 ### 1. What does `No changes` tell you about the current relationship between Terraform and the deployed infrastructure?
 
-Write your answer here.
+No changes means Terraform has compared the current Terraform configuration and state with the deployed Azure infrastructure and found no differences. Meaning Terraform’s configuration, its state file, and the actual Azure resources are all aligned: there are no pending creates, updates, or deletes. In other words, the desired state (.tf files) matches the real state (what exists in Azure).
 
 ### 2. Why is a clean baseline important before introducing a test change?
 
-Write your answer here.
+A clean baseline gives you a known‑good starting point. That way, when you later introduce a controlled change, any drift or plan differences you see can be confidently attributed to that specific change, not to pre‑existing mismatches or earlier errors. It makes the experiment controlled and the evidence interpretable.
 
 ---
 
@@ -74,21 +74,21 @@ Provide Claude Code with clear project context, evidence requirements, and safet
 
 Add a screenshot of `CLAUDE.md` open in VS Code showing the Project Overview, Review Workflow, Safety Rules, and Output Rules.
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/week08-ass06-claude-project-context-safety-rules.png)
 
 ## Questions
 
 ### 1. Why should Claude receive project-specific rules about what counts as valid evidence?
 
-Write your answer here.
+Claude needs project-specific rules so that its analysis is based on actual Terraform evidence rather than assumptions(e.g., “only changes shown in the current terraform plan count as drift”). The rules tell Claude which files, Terraform plan results, JSON data, and reports it should inspect before making a recommendation.
 
 ### 2. Why must the human remain responsible for running `terraform apply`?
 
-Write your answer here.
+Terraform apply can change or destroy live infrastructure. Keeping that action under explicit human control ensures accountability, allows final risk judgment, and prevents accidental or automated changes based solely on AI reasoning.
 
 ### 3. Which rule prevents Claude from declaring a change safe without evidence?
 
-Write your answer here.
+The rule that requires Claude to base conclusions on the generated drift report and terraform plan output (and not on assumptions) prevents it from declaring a change safe without concrete evidence. In practice, this is the “evidence requirements” / “safety rules” section in CLAUDE.md that ties analysis to the script’s report.
 
 ---
 
@@ -104,7 +104,7 @@ Create a Bash script that gathers Terraform plan evidence and checks it for dest
 
 Add a screenshot of the top section of `tf-drift-check.sh` showing the variables and `checks` array.
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/week08-ass06-script-variables-checks-array.png)
 
 ---
 
@@ -112,7 +112,9 @@ Add your screenshot here.
 
 Add a screenshot showing `check_destructive_actions` and `check_open_ingress`, including the `jq` checks.
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/week08-ass06-destructive-action.png)
+
+![Assignment 5 screenshot](screenshots/week08-ass06-open-ingress.png)
 
 ---
 
@@ -120,29 +122,37 @@ Add your screenshot here.
 
 Add a screenshot showing successful `bash -n` and `ls -l` output.
 
-Add your screenshot here.
+![Assignment 5 screenshot](screenshots/week08-ass06-script-validation-permissions.png)
+
+![Assignment 5 screenshot](screenshots/week08-ass06-script-validation-permissions2.png)
+
+The baseline is not clean because some VMs are missing and MySQL must be replaced due to configuration changes
 
 ## Questions
 
 ### 1. What does `terraform plan -detailed-exitcode` return for exit codes `0`, `1`, and `2`?
 
-Write your answer here.
+0: Plan succeeded and there are no changes (clean baseline).
+
+1: Plan failed with an error (configuration or provider issue).
+
+2: Plan succeeded and there are changes pending (drift or intended updates).
 
 ### 2. Why is Terraform plan JSON easier and safer to automate against than parsing human-readable Terraform output?
 
-Write your answer here.
+JSON is structured and machine‑readable: resource types, actions, and attributes are in predictable fields. This avoids brittle text parsing of formatted console output, which can change between Terraform versions or locales. With JSON, jq queries can reliably detect deletes, replacements, or security‑rule changes.
 
 ### 3. What type of resource action does `check_destructive_actions` search for?
 
-Write your answer here.
+It searches for "delete" actions in the plan JSON (i.e., resources that Terraform plans to destroy).
 
 ### 4. Why does finding a `delete` action also help detect replacements?
 
-Write your answer here.
+A replacement in Terraform is implemented as delete + create: the old resource is destroyed and a new one is created. Detecting "delete" therefore catches both pure deletions and replacements.
 
 ### 5. Why must this script never run `terraform apply`?
 
-Write your answer here.
+The script’s role is evidence gathering and policy checking, not execution. Running apply would let the script change infrastructure automatically, violating the safety model where humans must approve and execute any real changes.
 
 ---
 
@@ -158,7 +168,7 @@ Verify that the review workflow reports a healthy result against your clean Terr
 
 Add a screenshot of the drift script output showing your full name and a `HEALTHY` result.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -166,7 +176,7 @@ Add your screenshot here.
 
 Add a screenshot showing the captured script exit code `0`.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ## Questions
 
@@ -196,7 +206,7 @@ Turn the Bash evidence-gathering workflow into a reusable Agentic AI review proc
 
 Add a screenshot of `SKILL.md` showing the frontmatter, allowed tools, and safety rules.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -204,7 +214,7 @@ Add your screenshot here.
 
 Add a screenshot of `/tf-drift-review` showing the clean `HEALTHY` result.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ## Questions
 
@@ -242,7 +252,7 @@ Create a safe, intentional difference and confirm that Terraform and Claude dete
 
 Add a screenshot of the controlled change you introduced, with sensitive details hidden.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -250,7 +260,7 @@ Add your screenshot here.
 
 Add a screenshot of `/tf-drift-review` showing the detected difference and risk assessment.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -258,7 +268,7 @@ Add your screenshot here.
 
 Add a screenshot of `drift-detected-report.txt` showing your full name and the `WARN` or `FAIL` result.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ## Questions
 
@@ -304,7 +314,7 @@ Overall Status: FAIL
 
 Add a screenshot of `.claude/settings.json` showing the `PreToolUse` safety hook.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -312,7 +322,7 @@ Add your screenshot here.
 
 Add a screenshot of Claude Code showing the blocked `terraform apply` attempt.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ## Questions
 
@@ -350,7 +360,7 @@ Resolve the detected difference intentionally, verify the infrastructure returns
 
 Add a screenshot of the human-reviewed resolution or `terraform apply` output where applicable.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -358,7 +368,7 @@ Add your screenshot here.
 
 Add a screenshot of the final `/tf-drift-review` showing `HEALTHY`.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -369,7 +379,7 @@ Add a screenshot of `ls -lah reports` showing both:
 - `drift-detected-report.txt`
 - `resolved-report.txt`
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ---
 
@@ -377,7 +387,7 @@ Add your screenshot here.
 
 Add a screenshot of `drift-review-summary.md` showing all required sections and your full name.
 
-Add your screenshot here.
+![Assignment 5 screenshot]
 
 ## Terraform Drift Review Summary
 
